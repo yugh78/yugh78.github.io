@@ -1,4 +1,4 @@
-name: Deploy NAWAS
+name: Deploy publication
 
 on:
   push:
