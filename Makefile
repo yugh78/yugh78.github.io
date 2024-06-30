@@ -8,3 +8,6 @@ build:
 	mkdir -p $(OUTPUT_DIR)
 	cp src/* $(OUTPUT_DIR) -r
 	cp images $(OUTPUT_DIR)/images -r
+
+watch-css:
+	npx tailwindcss -i ./src/input.css -o ./src/output.css --minify --watch

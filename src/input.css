@@ -2,31 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.card{
-    @apply
-    flex-col md:flex-row items-center    shadow-blue-700 drop-shadow-lg flex border-4 border-sky-300 rounded-xl p-4 gap-8 bg-blue-100 text-lg;
-
+body {
+    @apply min-h-screen bg-sky-100;
 }
-
- 
-
-.font-amatic{
+main {
+    @apply px-10;
+}
+h1 {
+    @apply pb-3 text-7xl font-bold text-center font-amatic;
+}
+.card {
+    @apply flex-col md:flex-row items-center shadow-blue-700 drop-shadow-lg flex border-4 border-sky-300 rounded-xl p-4 gap-8 bg-blue-100 text-lg;
+}
+.letter-highlight {
+    @apply text-blue-800;
+}
+.font-amatic {
     font-family: "Amatic SC", sans-serif;
     font-weight: 700;
     font-style: normal;
-    
 }
 
-h2{
-    @apply
-    text-5xl font-bold py-10 text-center font-amatic;
+h2 {
+    @apply text-5xl font-bold py-10 text-center font-amatic;
 }
-h5{
-    @apply
-    font-mono text-2xl;
+
+h5 {
+    @apply font-mono text-2xl;
 }
-h6{
-    @apply
-    font-mono text-xl;
+
+h6 {
+    @apply font-mono text-xl;
 }
