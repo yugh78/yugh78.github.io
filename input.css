@@ -11,8 +11,17 @@ main {
 h1 {
     @apply pb-3 text-7xl font-bold text-center font-amatic;
 }
+.card-container {
+    @apply grid grid-cols-1 lg:grid-cols-2 gap-10;
+}
 .card {
-    @apply flex-col md:flex-row items-center shadow-blue-700 drop-shadow-lg flex border-4 border-sky-300 rounded-xl p-4 gap-8 bg-blue-100 text-lg;
+    @apply flex-col lg:flex-row items-center shadow-blue-700 drop-shadow-lg flex border-4 border-sky-300 rounded-xl p-8 gap-8 bg-blue-100 text-lg;
+}
+.card-image {
+    @apply lg:max-w-80 flex-grow-0 rounded-md;
+}
+.card-text {
+    @apply flex-grow;
 }
 .letter-highlight {
     @apply text-blue-800;
