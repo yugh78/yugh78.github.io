@@ -1,6 +1,5 @@
 <script setup>
-import Card from '../components/Card.vue'
-import ProjectCard from '../components/ProjectCard.vue'
+import SummaryCard from '../components/SummaryCard.vue'
 </script>
 <template>
   <!-- Page header -->
@@ -14,7 +13,7 @@ import ProjectCard from '../components/ProjectCard.vue'
   <section>
     <h2>Кратко <span class="letter-highlight">о</span>бо мне</h2>
     <div class="card-container">
-      <Card v-for="sum in summaries" :key="sum" :img="sum.img" :text="sum.text" />
+      <SummaryCard v-for="sum in summaries" :key="sum" :img="sum.img" :text="sum.text" />
     </div>
   </section>
   <!-- Skills section -->
@@ -51,12 +50,6 @@ import ProjectCard from '../components/ProjectCard.vue'
           <p>Есть аккаунт</p>
         </li>
       </ul>
-    </div>
-  </section>
-  <section>
-    <h2>Проекты</h2>
-    <div>
-      <ProjectCard name="Some" description="My first project" />
     </div>
   </section>
 </template>

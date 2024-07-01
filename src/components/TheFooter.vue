@@ -1,5 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 </script>
 <template>
   <footer class="bg-sky-200 flex flex-row px-10 py-2 mt-10 gap-8 flex-wrap">
