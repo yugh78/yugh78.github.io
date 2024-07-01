@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply min-h-screen bg-sky-100 flex flex-col;
+}
+#app {
+  @apply flex-grow flex-col flex;
+}
+main {
+  @apply px-10 flex-grow;
+}
+footer {
+}
+h1 {
+  @apply pb-3 text-7xl font-bold text-center font-amatic;
+}
+
+.card-container {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-10;
+}
+
+.card {
+  @apply flex-col lg:flex-row items-center shadow-blue-700 drop-shadow-lg flex border-4 border-sky-300 rounded-xl p-8 gap-8 bg-blue-100 text-lg;
+}
+
+.card-image {
+  @apply md:max-w-80 lg:max-w-40 flex-grow-0 rounded-md;
+}
+
+.card-text {
+  @apply flex-grow;
+}
+
+.letter-highlight {
+  @apply text-blue-800;
+}
+
+.font-amatic {
+  font-family: 'Amatic SC', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.footer-link {
+  @apply text-gray-700 hover:text-gray-900 text-xl flex flex-row items-center gap-1 justify-start;
+}
+
+h2 {
+  @apply text-5xl font-bold py-10 text-center font-amatic;
+}
+
+h5 {
+  @apply font-mono text-2xl;
+}
+
+h6 {
+  @apply font-mono text-xl;
+}
