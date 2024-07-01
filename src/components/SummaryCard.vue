@@ -1,7 +1,7 @@
 <template>
-  <div class="card">
-    <img class="card-image" :src="img" alt="" />
-    <div class="card-text">
+  <div class="summary-card">
+    <img class="summary-card-image" :src="img" alt="" />
+    <div class="summary-card-text">
       {{ text }}
     </div>
   </div>

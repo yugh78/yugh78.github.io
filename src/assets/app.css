@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-screen bg-sky-100 flex flex-col;
+  @apply min-h-screen bg-ziggurat-50 flex flex-col;
 }
 #app {
   @apply flex-grow flex-col flex;
@@ -18,19 +18,19 @@ h1 {
 }
 
 .card-container {
-  @apply grid grid-cols-1 lg:grid-cols-2 gap-10;
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-10 2xl:grid-cols-3;
 }
 
-.card {
-  @apply flex-col lg:flex-row items-center shadow-blue-700 drop-shadow-lg flex border-4 border-sky-300 rounded-xl p-8 gap-8 bg-blue-100 text-lg;
+.summary-card {
+  @apply flex-col lg:flex-row items-center shadow-ziggurat-700 drop-shadow-xl flex border border-ziggurat-400 rounded-xl p-8 gap-8 bg-ziggurat-200 text-lg hover:drop-shadow-2xl transition-all duration-500 hover:border-ziggurat-600;
 }
 
-.card-image {
-  @apply md:max-w-80 lg:max-w-40 flex-grow-0 rounded-md;
+.summary-card-image {
+  @apply md:max-w-80 lg:max-w-40 flex-grow-0 rounded-md drop-shadow-xl shadow-ziggurat-400;
 }
 
-.card-text {
-  @apply flex-grow;
+.summary-card-text {
+  @apply flex-grow text-ziggurat-950 font-bold text-balance;
 }
 
 .letter-highlight {
@@ -44,7 +44,7 @@ h1 {
 }
 
 .footer-link {
-  @apply text-gray-700 hover:text-gray-900 text-xl flex flex-row items-center gap-1 justify-start;
+  @apply text-ziggurat-500 hover:text-ziggurat-600 active:text-ziggurat-700 text-xl flex flex-row items-center gap-1 justify-start;
 }
 
 h2 {
@@ -57,4 +57,8 @@ h5 {
 
 h6 {
   @apply font-mono text-xl;
+}
+.fas,
+.fa-solid {
+  @apply text-ziggurat-600 p-1 text-sm;
 }
