@@ -65,13 +65,13 @@ h6 {
 }
 
 .skill-card {
-  @apply bg-ziggurat-100 border border-ziggurat-400 p-6 rounded-xl flex flex-col gap-4 drop-shadow-lg shadow-ziggurat-700 hover:drop-shadow-2xl hover:border-ziggurat-500;
+  @apply bg-ziggurat-100 border border-ziggurat-400 p-6 rounded-xl flex flex-col gap-4 drop-shadow-lg shadow-ziggurat-700 hover:drop-shadow-2xl hover:border-ziggurat-500 justify-center;
   /* Animations */
   @apply transition-all duration-500;
 }
 
 .skill-card-header {
-  @apply flex flex-row gap-3;
+  @apply flex flex-row gap-3 items-center;
 
   &>.skill-card-header-text {
     @apply text-2xl text-ziggurat-950;
