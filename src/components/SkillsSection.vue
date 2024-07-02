@@ -30,7 +30,7 @@ const SKILLS = [
       },
       {
         header: 'django',
-        description: 'только трогал'
+        description: 'Только трогал'
       }
     ]
   }
@@ -52,7 +52,7 @@ const SKILLS = [
             <p v-if="skill.description" class="skill-card-body">
               {{ skill.description }}
             </p>
-            <div v-if="skill.subSkills" class="flex flex-col gap-2">
+            <div v-if="skill.subSkills" class="flex flex-col gap-4">
               <div v-for="sub in skill.subSkills" :key="sub.header" class="skill-subcard">
                 <div class="skill-subcard-header">
                   {{ sub.header }}

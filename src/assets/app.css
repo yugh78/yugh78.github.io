@@ -32,6 +32,13 @@ h6 {
   @apply text-xl;
 }
 
+.nav-link {
+  @apply text-ziggurat-950 px-8 py-2 rounded-full flex flex-row gap-2 items-baseline;
+  @apply hover:bg-ziggurat-600 hover:text-ziggurat-200 active:bg-ziggurat-700;
+  @apply transition-all duration-500 delay-75;
+  @apply hover:shadow-ziggurat-600 hover:drop-shadow-md;
+}
+
 .card-container {
   @apply grid grid-cols-1 lg:grid-cols-2 gap-10 2xl:grid-cols-3;
 }
@@ -83,6 +90,9 @@ h6 {
 
 .skill-subcard {
   @apply flex flex-col bg-ziggurat-200 rounded-lg p-2 px-4 gap-2;
+  /* Shadow */
+  @apply shadow-ziggurat-200 drop-shadow-md hover:drop-shadow-lg;
+  @apply hover:grow;
 }
 
 .skill-subcard-header {
@@ -102,10 +112,15 @@ h6 {
 }
 
 .footer-link {
-  @apply text-ziggurat-500 hover:text-ziggurat-600 active:text-ziggurat-700 text-xl flex flex-row items-center gap-1 justify-start;
+  @apply text-lg flex flex-row items-center gap-2 justify-start;
+  @apply even:text-ziggurat-500 hover:text-ziggurat-600 active:text-ziggurat-700 odd:text-ziggurat-400;
 }
 
 footer>.fas,
 footer>.fa-solid {
   @apply text-ziggurat-600 p-1 text-sm;
+}
+
+.mobile-clamp {
+  max-width: 640px;
 }

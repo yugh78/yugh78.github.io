@@ -1,14 +1,13 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 import TheFooter from './components/TheFooter.vue'
+import TheHeader from './components/TheHeader.vue'
 import preview from './images/preview.png'
 console.log('load preview' + preview)
 </script>
 
 <template>
-  <header>
-    <nav></nav>
-  </header>
+  <TheHeader />
 
   <main>
     <RouterView />
