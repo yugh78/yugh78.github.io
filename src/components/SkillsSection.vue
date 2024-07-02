@@ -2,7 +2,7 @@
 const SKILLS = [
   {
     header: 'Tailwind',
-    description: 'Этот сайт я накидал с использованием tailwind',
+    description: 'Этот сайт я накидал с использованием <kbd>tailwind</kbd>',
     iconName: 'fa-brands fa-css3'
   },
 
@@ -13,7 +13,7 @@ const SKILLS = [
   {
     header: 'SQL',
     iconName: 'fa-solid fa-database',
-    description: 'Знания базовых запросов'
+    description: 'Знания базовых запросов (<kbd>SELECT</kbd>, <kbd>JOIN</kbd>, <kbd>INSERT</kbd>)'
   },
   {
     header: 'Figma',
@@ -49,9 +49,7 @@ const SKILLS = [
               </div>
               <div class="skill-card-header-text">{{ skill.header }}</div>
             </div>
-            <p v-if="skill.description" class="skill-card-body">
-              {{ skill.description }}
-            </p>
+            <p v-if="skill.description" v-html="skill.description" class="skill-card-body"></p>
             <div v-if="skill.subSkills" class="flex flex-col gap-4">
               <div v-for="sub in skill.subSkills" :key="sub.header" class="skill-subcard">
                 <div class="skill-subcard-header">
