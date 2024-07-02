@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 <template>
   <header>
-    <nav class="flex flex-row gap-4 p-4 justify-end items-center">
+    <nav class="flex flex-row gap-4 py-4 justify-end items-center">
       <RouterLink to="/" class="nav-link">
         <i class="fas fa-home"></i>
         Главная

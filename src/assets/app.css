@@ -10,11 +10,15 @@ body {
   @apply grow flex-col flex;
 }
 
-main {
-  @apply px-10 grow;
+main,
+footer,
+header {
+  @apply px-10
 }
 
-footer {}
+main {
+  @apply grow;
+}
 
 h1 {
   @apply pb-3 text-7xl font-bold text-center font-amatic;
@@ -33,8 +37,8 @@ h6 {
 }
 
 .nav-link {
-  @apply text-ziggurat-950 px-8 py-2 rounded-full flex flex-row gap-2 items-baseline;
-  @apply hover:bg-ziggurat-600 hover:text-ziggurat-200 active:bg-ziggurat-700;
+  @apply text-ziggurat-950 border border-ziggurat-950 px-8 py-2 rounded-full flex flex-row gap-2 items-baseline;
+  @apply hover:bg-ziggurat-600 hover:border-ziggurat-600 hover:text-ziggurat-200 active:bg-ziggurat-700;
   @apply transition-all duration-500 delay-75;
   @apply hover:shadow-ziggurat-600 hover:drop-shadow-md;
 }
