@@ -7,21 +7,21 @@ const SKILLS = [
   },
 
   {
-    header: 'css/html',
+    header: 'CSS/HTML',
     iconName: 'fa-brands fa-html5'
   },
   {
-    header: 'sql',
+    header: 'SQL',
     iconName: 'fa-solid fa-database',
     description: 'Знания базовых запросов'
   },
   {
-    header: 'figma',
+    header: 'Figma',
     iconName: 'fa-brands fa-figma',
     description: 'Есть аккаунт'
   },
   {
-    header: 'python',
+    header: 'Python',
     iconName: 'fa-brands fa-python',
     subSkills: [
       {

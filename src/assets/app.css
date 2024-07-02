@@ -86,7 +86,8 @@ h6 {
 }
 
 .skill-subcard-header {
-  @apply text-xl font-semibold;
+  @apply text-xl;
+  font-weight: 400;
 }
 
 .skill-subcard-body {
