@@ -3,18 +3,33 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-screen bg-ziggurat-50 flex flex-col;
+  @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col;
 }
+
 #app {
-  @apply flex-grow flex-col flex;
+  @apply grow flex-col flex;
 }
+
 main {
-  @apply px-10 flex-grow;
+  @apply px-10 grow;
 }
-footer {
-}
+
+footer {}
+
 h1 {
   @apply pb-3 text-7xl font-bold text-center font-amatic;
+}
+
+h2 {
+  @apply text-5xl font-bold py-10 text-center font-amatic;
+}
+
+h5 {
+  @apply text-2xl mb-3;
+}
+
+h6 {
+  @apply text-xl;
 }
 
 .card-container {
@@ -26,15 +41,57 @@ h1 {
 }
 
 .summary-card-image {
-  @apply md:max-w-80 lg:max-w-40 flex-grow-0 rounded-md drop-shadow-xl shadow-ziggurat-400;
+  @apply md:max-w-80 lg:max-w-40 grow-0 rounded-md drop-shadow-xl shadow-ziggurat-400;
 }
 
 .summary-card-text {
-  @apply flex-grow text-ziggurat-950 font-bold text-balance;
+  @apply grow text-ziggurat-950 text-balance;
+  font-weight: 400;
 }
 
 .letter-highlight {
-  @apply text-blue-800;
+  @apply text-ziggurat-700;
+}
+
+.skill-card {
+  @apply bg-ziggurat-100 border border-ziggurat-400 p-6 rounded-xl flex flex-col gap-4 drop-shadow-lg shadow-ziggurat-700 hover:drop-shadow-2xl hover:border-ziggurat-500;
+  /* Animations */
+  @apply transition-all duration-500;
+}
+
+.skill-card-header {
+  @apply flex flex-row gap-3;
+
+  &>.skill-card-header-text {
+    @apply text-2xl text-ziggurat-950;
+    font-weight: 500;
+  }
+}
+
+.skill-card-header-icon {
+  @apply bg-ziggurat-600 w-10 h-10 rounded-full text-ziggurat-100 flex justify-center items-center shadow-ziggurat-600 drop-shadow-xl;
+
+  &>i {
+    @apply flex p-0 m-0;
+  }
+}
+
+.skill-card-body {
+  @apply flex;
+  line-height: 1.75;
+}
+
+.skill-subcard {
+  @apply flex flex-col bg-ziggurat-200 rounded-lg p-2 px-4 gap-2;
+}
+
+.skill-subcard-header {
+  @apply text-xl font-semibold;
+}
+
+.skill-subcard-body {
+  @apply font-light;
+  line-height: 1.75;
 }
 
 .font-amatic {
@@ -47,18 +104,7 @@ h1 {
   @apply text-ziggurat-500 hover:text-ziggurat-600 active:text-ziggurat-700 text-xl flex flex-row items-center gap-1 justify-start;
 }
 
-h2 {
-  @apply text-5xl font-bold py-10 text-center font-amatic;
-}
-
-h5 {
-  @apply font-mono text-2xl;
-}
-
-h6 {
-  @apply font-mono text-xl;
-}
-.fas,
-.fa-solid {
+footer>.fas,
+footer>.fa-solid {
   @apply text-ziggurat-600 p-1 text-sm;
 }

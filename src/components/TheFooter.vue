@@ -2,7 +2,7 @@
 import { RouterLink } from 'vue-router'
 </script>
 <template>
-  <footer class="bg-ziggurat-200 flex flex-row px-10 py-2 mt-10 gap-8 flex-wrap">
+  <footer class="bg-ziggurat-200 flex flex-row px-10 py-2 mt-10 gap-12 flex-wrap">
     <div>
       <h5>Ссылки</h5>
       <div class="">

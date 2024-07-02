@@ -18,6 +18,11 @@ module.exports = {
           950: '#1c2c35'
         }
       }
+    },
+    fontFamily: {
+      sans: ['Roboto', 'sans'],
+      serif: ['PT Serif', 'serif'],
+      mono: ['IBM Plex Mono', 'mono']
     }
   },
   plugins: []

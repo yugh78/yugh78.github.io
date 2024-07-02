@@ -1,5 +1,6 @@
 <script setup>
 import SummaryCard from '../components/SummaryCard.vue'
+import SkillsSection from '../components/SkillsSection.vue'
 </script>
 <template>
   <!-- Page header -->
@@ -17,41 +18,7 @@ import SummaryCard from '../components/SummaryCard.vue'
     </div>
   </section>
   <!-- Skills section -->
-  <section>
-    <div>
-      <h2>Мои навыки</h2>
-      <ul class="list-disc">
-        <li>
-          <h5>tailwind</h5>
-          <p>Этот сайт я накидал с использованием tailwind</p>
-        </li>
-        <li>
-          <h5>python</h5>
-          <ul class="list-disc ps-7">
-            <li>
-              <h6>aiogram</h6>
-              <p>Разрабатывал телеграм ботов на заказ</p>
-            </li>
-            <li>
-              <h6>django</h6>
-              <p>Только трогал</p>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <h5>css/html</h5>
-        </li>
-        <li>
-          <h5>SQL</h5>
-          <p>Знания базовых запросов</p>
-        </li>
-        <li>
-          <h5>Figma</h5>
-          <p>Есть аккаунт</p>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <SkillsSection />
 </template>
 <script>
 import me from '../images/me.png'
