@@ -38,26 +38,26 @@ const SKILLS = [
 </script>
 <template>
   <section>
-    <div>
-      <h2>Мои навыки</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        <div v-for="skill in SKILLS" :key="skill" class="flex grow">
-          <div class="skill-card grow">
-            <div class="skill-card-header">
-              <div v-if="skill.iconName" class="skill-card-header-icon">
-                <i :class="skill.iconName"></i>
-              </div>
-              <div class="skill-card-header-text">{{ skill.header }}</div>
+    <h2>Мои навыки</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4"
+    >
+      <div v-for="skill in SKILLS" :key="skill" class="flex">
+        <div class="skill-card grow">
+          <div class="skill-card-header">
+            <div v-if="skill.iconName" class="skill-card-header-icon">
+              <i :class="skill.iconName"></i>
             </div>
-            <p v-if="skill.description" v-html="skill.description" class="skill-card-body"></p>
-            <div v-if="skill.subSkills" class="flex flex-col gap-4">
-              <div v-for="sub in skill.subSkills" :key="sub.header" class="skill-subcard">
-                <div class="skill-subcard-header">
-                  {{ sub.header }}
-                </div>
-                <div v-if="sub.description" class="skill-subcard-body">
-                  {{ sub.description }}
-                </div>
+            <div class="skill-card-header-text">{{ skill.header }}</div>
+          </div>
+          <p v-if="skill.description" v-html="skill.description" class="skill-card-body"></p>
+          <div v-if="skill.subSkills" class="flex flex-col gap-4">
+            <div v-for="sub in skill.subSkills" :key="sub.header" class="skill-subcard">
+              <div class="skill-subcard-header">
+                {{ sub.header }}
+              </div>
+              <div v-if="sub.description" class="skill-subcard-body">
+                {{ sub.description }}
               </div>
             </div>
           </div>

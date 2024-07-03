@@ -13,7 +13,7 @@ body {
 main,
 footer,
 header {
-  @apply px-10
+  @apply px-10;
 }
 
 main {
@@ -82,7 +82,7 @@ kbd {
 .skill-card-header {
   @apply flex flex-row gap-3 items-center;
 
-  &>.skill-card-header-text {
+  & > .skill-card-header-text {
     @apply text-2xl text-ziggurat-950;
     font-weight: 500;
   }
@@ -91,7 +91,7 @@ kbd {
 .skill-card-header-icon {
   @apply bg-ziggurat-600 w-10 h-10 rounded-full text-ziggurat-100 flex justify-center items-center shadow-ziggurat-600 drop-shadow-xl;
 
-  &>i {
+  & > i {
     @apply flex p-0 m-0;
   }
 }
@@ -129,11 +129,50 @@ kbd {
   @apply even:text-ziggurat-500 hover:text-ziggurat-600 active:text-ziggurat-700 odd:text-ziggurat-400;
 }
 
-footer>.fas,
-footer>.fa-solid {
+footer > .fas,
+footer > .fa-solid {
   @apply text-ziggurat-600 p-1 text-sm;
 }
 
 .mobile-clamp {
   max-width: 640px;
+}
+
+.btn {
+  @apply rounded-lg w-full py-2 px-6 text-center;
+  @apply drop-shadow-lg hover:drop-shadow-xl;
+}
+.btn.btn-flat {
+  @apply bg-ziggurat-500 hover:bg-ziggurat-600 active:bg-ziggurat-700 text-ziggurat-50;
+}
+/* Projects section */
+.project-card {
+  @apply rounded-xl flex bg-ziggurat-700 min-h-40;
+  @apply shadow-ziggurat-800 drop-shadow-md hover:drop-shadow-xl;
+  @apply transition-all duration-200 hover:-translate-y-1;
+}
+.project-card-image {
+  @apply flex grow rounded-xl;
+}
+.project-card-content {
+  @apply grow flex flex-col justify-end  p-4 gap-3 rounded-xl;
+  /* Gradient */
+  /* @apply from-transparent to-ziggurat-600 bg-gradient-to-b; */
+}
+.project-card-body {
+  @apply text-ziggurat-100 border border-ziggurat-400 grow p-4 rounded-md flex flex-col gap-3;
+  @apply bg-ziggurat-500 bg-opacity-40 backdrop-filter backdrop-blur-sm;
+}
+.project-card-title {
+  @apply text-2xl font-bold;
+}
+.project-tags-container {
+  @apply flex flex-row flex-wrap gap-2;
+}
+.project-tag {
+  @apply bg-ziggurat-300 text-ziggurat-950 px-3 rounded-full cursor-pointer;
+  @apply transition-all duration-150;
+  &:hover {
+    @apply bg-ziggurat-400 text-ziggurat-100 px-4;
+  }
 }

@@ -1,6 +1,7 @@
 <script setup>
 import SkillsSection from '../components/SkillsSection.vue'
 import SummarySection from '../components/SummarySection.vue'
+import ProjectsSection from '../components/ProjectsSection.vue'
 </script>
 <template>
   <!-- Page header -->
@@ -12,5 +13,6 @@ import SummarySection from '../components/SummarySection.vue'
   </hgroup>
   <SummarySection />
   <SkillsSection />
+  <ProjectsSection />
 </template>
 <script></script>
