@@ -45,7 +45,8 @@ const icons = {
   view: 'fa-regular fa-eye',
   sourceCode: 'fas fa-code',
   html: 'fab fa-html5',
-  notAvailable: 'fas fa-ban'
+  notAvailable: 'fas fa-ban',
+  sql: 'fas fa-database'
 }
 const PROJECTS = [
   {
@@ -80,6 +81,7 @@ const PROJECTS = [
     tags: [
       { name: 'python', icon: 'fab fa-python' },
       { name: 'vk api', icon: 'fab fa-vk' },
+      { name: 'sqlite', icon: icons.sql },
       { name: 'aiogram', icon: icons.dummy }
     ],
     actions: [
@@ -104,6 +106,14 @@ const PROJECTS = [
       {
         name: 'bootstrap',
         icon: 'fab fa-bootstrap'
+      },
+      {
+        name: 'dotnet',
+        icon: icons.dummy
+      },
+      {
+        name: 'sql',
+        icon: icons.sql
       }
     ],
     actions: [
@@ -117,7 +127,8 @@ const PROJECTS = [
       },
       {
         title: 'Исходный код',
-        icon: icons.sourceCode
+        icon: icons.sourceCode,
+        url: 'https://github.com/MainMaestro/PizzaExpress'
       }
     ]
   }

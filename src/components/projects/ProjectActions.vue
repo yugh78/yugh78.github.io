@@ -4,7 +4,8 @@
     :key="action"
     class="btn btn-flat group/action"
     :disabled="action.disabled"
-    :href="action"
+    :href="action.url"
+    target="_blank"
   >
     {{ action.title }}
     <span
