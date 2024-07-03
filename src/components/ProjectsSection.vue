@@ -16,7 +16,7 @@
                     <ProjectTagsContainer :tags="proj.tags" />
                   </div>
                   <div
-                    class="h-40 min-w-32 bg-cover rounded-lg"
+                    class="h-40 min-w-32 bg-cover rounded-lg shadow-ziggurat-950 drop-shadow-sm"
                     :style="{ 'background-image': `url('${proj.gif}')` }"
                   ></div>
                 </div>
