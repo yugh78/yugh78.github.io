@@ -146,9 +146,12 @@ footer > .fa-solid {
 .btn.btn-flat {
   @apply bg-ziggurat-500 hover:bg-ziggurat-600 active:bg-ziggurat-700 text-ziggurat-50;
 }
+.btn.btn-flat[disabled] {
+  @apply bg-ziggurat-100 text-ziggurat-600 drop-shadow-sm shadow-ziggurat-100;
+}
 /* Projects section */
 .project-card {
-  @apply rounded-xl flex bg-ziggurat-700 min-h-40;
+  @apply rounded-xl flex bg-ziggurat-200 min-h-40;
   @apply shadow-ziggurat-800 drop-shadow-md;
   @apply transition-all duration-200;
 }
@@ -161,9 +164,15 @@ footer > .fa-solid {
   /* @apply from-transparent to-ziggurat-600 bg-gradient-to-b; */
 }
 .project-card-body {
-  @apply text-ziggurat-100 border border-ziggurat-400 grow p-4 rounded-md flex flex-col gap-3;
+  @apply text-ziggurat-100 border border-ziggurat-400 grow p-4 rounded-md flex flex-col gap-3 justify-between;
   @apply bg-ziggurat-500 shadow-ziggurat-700 bg-opacity-40 backdrop-filter backdrop-blur-md;
   @apply hover:-translate-y-1 transition-all duration-200 hover:drop-shadow-xl;
+}
+.project-card-body-content {
+  @apply flex flex-row gap-4;
+}
+.project-card-body-text {
+  @apply flex flex-col gap-2 justify-between;
 }
 .project-card-title {
   @apply text-2xl font-bold;
@@ -177,4 +186,23 @@ footer > .fa-solid {
   &:hover {
     @apply bg-ziggurat-400 text-ziggurat-100 px-4 mx-0;
   }
+}
+/* Markup */
+.markup a {
+  @apply text-ziggurat-600 hover:underline;
+}
+
+/* Tooltip */
+.tooltip {
+  @apply text-center p-4 rounded-xl;
+  @apply transition-all duration-500;
+  @apply flex-row gap-4 items-baseline;
+  @apply drop-shadow-lg;
+}
+.tooltip.tooltip-bad {
+  @apply bg-ziggurat-700 text-ziggurat-50 shadow-ziggurat-950;
+}
+.tooltip-icon {
+  @apply bg-ziggurat-100 text-ziggurat-600 rounded-full p-1;
+  @apply flex justify-center items-center;
 }
