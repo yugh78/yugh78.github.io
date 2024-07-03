@@ -139,8 +139,9 @@ footer > .fa-solid {
 }
 
 .btn {
-  @apply rounded-lg w-full py-2 px-6 text-center;
+  @apply rounded-lg w-full py-2 px-6 text-center select-none;
   @apply drop-shadow-lg hover:drop-shadow-xl;
+  @apply transition-all duration-300;
 }
 .btn.btn-flat {
   @apply bg-ziggurat-500 hover:bg-ziggurat-600 active:bg-ziggurat-700 text-ziggurat-50;
@@ -148,20 +149,21 @@ footer > .fa-solid {
 /* Projects section */
 .project-card {
   @apply rounded-xl flex bg-ziggurat-700 min-h-40;
-  @apply shadow-ziggurat-800 drop-shadow-md hover:drop-shadow-xl;
-  @apply transition-all duration-200 hover:-translate-y-1;
+  @apply shadow-ziggurat-800 drop-shadow-md;
+  @apply transition-all duration-200;
 }
 .project-card-image {
-  @apply flex grow rounded-xl;
+  @apply flex flex-col grow rounded-xl bg-cover;
 }
 .project-card-content {
-  @apply grow flex flex-col justify-end  p-4 gap-3 rounded-xl;
+  @apply grow flex flex-col justify-end  p-6 gap-3 rounded-xl;
   /* Gradient */
   /* @apply from-transparent to-ziggurat-600 bg-gradient-to-b; */
 }
 .project-card-body {
   @apply text-ziggurat-100 border border-ziggurat-400 grow p-4 rounded-md flex flex-col gap-3;
-  @apply bg-ziggurat-500 bg-opacity-40 backdrop-filter backdrop-blur-sm;
+  @apply bg-ziggurat-500 shadow-ziggurat-700 bg-opacity-40 backdrop-filter backdrop-blur-md;
+  @apply hover:-translate-y-1 transition-all duration-200 hover:drop-shadow-xl;
 }
 .project-card-title {
   @apply text-2xl font-bold;
@@ -170,9 +172,9 @@ footer > .fa-solid {
   @apply flex flex-row flex-wrap gap-2;
 }
 .project-tag {
-  @apply bg-ziggurat-300 text-ziggurat-950 px-3 rounded-full cursor-pointer;
-  @apply transition-all duration-150;
+  @apply bg-ziggurat-300 text-ziggurat-950 px-3 py-1 mx-1 rounded-full cursor-pointer font-mono text-sm font-semibold;
+  @apply transition-all duration-300;
   &:hover {
-    @apply bg-ziggurat-400 text-ziggurat-100 px-4;
+    @apply bg-ziggurat-400 text-ziggurat-100 px-4 mx-0;
   }
 }
