@@ -1,4 +1,7 @@
 <script setup>
+defineProps({
+  sectionId: String
+})
 const SKILLS = [
   {
     header: 'Tailwind',

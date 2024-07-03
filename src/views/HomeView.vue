@@ -1,7 +1,5 @@
 <script setup>
-import SkillsSection from '../components/SkillsSection.vue'
-import SummarySection from '../components/SummarySection.vue'
-import ProjectsSection from '../components/ProjectsSection.vue'
+import SECTIONS from '../data/sections'
 </script>
 <template>
   <!-- Page header -->
@@ -11,8 +9,8 @@ import ProjectsSection from '../components/ProjectsSection.vue'
       Это мой сайт-визитк<span class="letter-highlight">а</span>
     </div>
   </hgroup>
-  <SummarySection />
-  <SkillsSection />
-  <ProjectsSection />
+  <div v-for="section in SECTIONS" :key="section.id">
+    <component :is="section.component"></component>
+  </div>
 </template>
 <script></script>

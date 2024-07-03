@@ -1,4 +1,7 @@
 <script setup>
+defineProps({
+  sectionId: String
+})
 import SummaryCard from './SummaryCard.vue'
 import me from '../images/me.png'
 import me_and_who from '../images/me_and_who.png'

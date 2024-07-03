@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section :id="sectionId">
     <h2>Мои проекты</h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
       <div v-for="proj in PROJECTS" :key="proj.name" class="flex flex-col gap-2 justify-between">
@@ -30,6 +30,10 @@
   </section>
 </template>
 <script setup>
+defineProps({
+  sectionId: String
+})
+
 import ProjectTagsContainer from './projects/ProjectTags.vue'
 import ProjectActions from './projects/ProjectActions.vue'
 

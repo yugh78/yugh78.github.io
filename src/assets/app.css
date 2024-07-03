@@ -32,7 +32,7 @@ h2 {
 }
 
 h5 {
-  @apply text-2xl mb-3;
+  @apply text-2xl mb-3 text-ziggurat-900;
 }
 
 h6 {
