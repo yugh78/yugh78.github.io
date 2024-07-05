@@ -3,6 +3,11 @@ import SECTIONS from '@/data/sections'
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import SummarySection from '@/components/SummarySection.vue'
+import { OpenGraph, Head, getHead } from '@/data/openGraph'
+import { useHead, useSeoMeta } from '@unhead/vue'
+
+// useSeoMeta(OpenGraph)
+useHead(getHead('Главная'))
 </script>
 <template>
   <!-- Page header -->
@@ -17,4 +22,3 @@ import SummarySection from '@/components/SummarySection.vue'
   <SkillsSection />
   <ProjectsSection />
 </template>
-<script></script>
