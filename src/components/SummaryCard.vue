@@ -1,6 +1,6 @@
 <template>
   <div class="summary-card">
-    <img class="summary-card-image" :src="img" alt="" />
+    <img class="summary-card-image" :src="img" alt="Иллюстрация" loading="lazy" />
     <div class="summary-card-text">
       {{ text }}
     </div>

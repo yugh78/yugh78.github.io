@@ -1,16 +1,20 @@
 <script setup>
-import SECTIONS from '../data/sections'
+import SECTIONS from '@/data/sections'
+import ProjectsSection from '@/components/ProjectsSection.vue'
+import SkillsSection from '@/components/SkillsSection.vue'
+import SummarySection from '@/components/SummarySection.vue'
 </script>
 <template>
   <!-- Page header -->
-  <hgroup class="pb-10">
+  <hgroup class="md:pb-10">
     <h1><span class="letter-highlight">П</span>ривет подписчики, я Евгений Дмитриевич</h1>
     <div class="text-center text-3xl font-amatic font-black">
       Это мой сайт-визитк<span class="letter-highlight">а</span>
     </div>
   </hgroup>
-  <div v-for="section in SECTIONS" :key="section.id">
-    <component :is="section.component"></component>
-  </div>
+
+  <SummarySection />
+  <SkillsSection />
+  <ProjectsSection />
 </template>
 <script></script>

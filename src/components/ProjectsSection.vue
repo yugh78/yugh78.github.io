@@ -1,7 +1,7 @@
 <template>
   <section :id="sectionId">
     <h2>Мои проекты</h2>
-    <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
       <div v-for="proj in PROJECTS" :key="proj.name" class="flex flex-col gap-2 justify-between">
         <div class="project-card">
           <div class="project-card-image" :style="{ 'background-image': `url('${proj.image}')` }">
@@ -15,10 +15,12 @@
                     <div class="markup" v-html="proj.description"></div>
                     <ProjectTagsContainer :tags="proj.tags" />
                   </div>
-                  <div
-                    class="h-40 min-w-32 bg-cover rounded-lg shadow-ziggurat-950 drop-shadow-sm"
-                    :style="{ 'background-image': `url('${proj.gif}')` }"
-                  ></div>
+                  <img
+                    :src="proj.gif"
+                    class="h-40 min-w-32 bg-cover rounded-lg shadow-ziggurat-950 drop-shadow-sm border-ziggurat-400 border"
+                    alt="Тут должна была быть гифка, подчёркивающая направление проекта"
+                    loading="lazy"
+                  />
                 </div>
               </div>
               <ProjectActions :actions="proj.actions" />

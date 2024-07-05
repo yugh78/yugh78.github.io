@@ -13,7 +13,7 @@ body {
 main,
 footer,
 header {
-  @apply px-10;
+  @apply px-4 md:px-10;
 }
 
 main {
@@ -21,14 +21,14 @@ main {
 }
 
 h1 {
-  @apply pb-3 text-7xl text-center font-amatic;
-  letter-spacing: 0.8rem;
+  @apply pb-3 text-4xl md:text-7xl text-center font-amatic;
+  letter-spacing: 0.6rem;
   font-weight: 700;
 }
 
 h2 {
-  @apply text-5xl py-10 text-center font-amatic;
-  letter-spacing: 0.4rem;
+  @apply text-3xl md:text-5xl py-10 text-center font-amatic;
+  /* letter-spacing: 0.4rem; */
 }
 
 h5 {
@@ -82,7 +82,7 @@ kbd {
 .skill-card-header {
   @apply flex flex-row gap-3 items-center;
 
-  & > .skill-card-header-text {
+  &>.skill-card-header-text {
     @apply text-2xl text-ziggurat-950;
     font-weight: 500;
   }
@@ -91,7 +91,7 @@ kbd {
 .skill-card-header-icon {
   @apply bg-ziggurat-600 w-10 h-10 rounded-full text-ziggurat-100 flex justify-center items-center shadow-ziggurat-600 drop-shadow-xl;
 
-  & > i {
+  &>i {
     @apply flex p-0 m-0;
   }
 }
@@ -129,8 +129,8 @@ kbd {
   @apply even:text-ziggurat-500 hover:text-ziggurat-600 active:text-ziggurat-700 odd:text-ziggurat-400;
 }
 
-footer > .fas,
-footer > .fa-solid {
+footer>.fas,
+footer>.fa-solid {
   @apply text-ziggurat-600 p-1 text-sm;
 }
 
@@ -143,50 +143,63 @@ footer > .fa-solid {
   @apply drop-shadow-lg hover:drop-shadow-xl;
   @apply transition-all duration-300;
 }
+
 .btn.btn-flat {
   @apply bg-ziggurat-500 hover:bg-ziggurat-600 active:bg-ziggurat-700 text-ziggurat-50;
 }
+
 .btn.btn-flat[disabled] {
   @apply bg-ziggurat-100 text-ziggurat-600 drop-shadow-xl shadow-ziggurat-100;
 }
+
 /* Projects section */
 .project-card {
   @apply rounded-xl flex bg-ziggurat-50 min-h-40;
   @apply shadow-ziggurat-800 drop-shadow-md;
   @apply transition-all duration-200;
 }
+
 .project-card-image {
   @apply flex flex-col grow rounded-xl bg-cover;
 }
+
 .project-card-content {
-  @apply grow flex flex-col justify-end  p-6 gap-3 rounded-xl;
+  @apply grow flex flex-col justify-end p-6 gap-3 rounded-xl;
   /* Gradient */
   /* @apply from-transparent to-ziggurat-600 bg-gradient-to-b; */
 }
+
 .project-card-body {
   @apply text-ziggurat-50 border border-ziggurat-400 grow p-4 rounded-md flex flex-col gap-3 justify-between;
   @apply bg-ziggurat-600 shadow-ziggurat-700 bg-opacity-40 backdrop-filter backdrop-blur-sm;
   @apply hover:-translate-y-1 transition-all duration-200 hover:drop-shadow-xl;
 }
+
 .project-card-body-content {
-  @apply flex flex-row gap-4;
+  @apply flex flex-col md:flex-row gap-4;
 }
+
 .project-card-body-text {
   @apply flex flex-col gap-2 justify-between;
 }
+
 .project-card-title {
   @apply text-2xl font-bold;
 }
+
 .project-tags-container {
   @apply flex flex-row flex-wrap gap-2;
 }
+
 .project-tag {
   @apply bg-ziggurat-300 text-ziggurat-950 px-3 py-1 mx-1 rounded-full cursor-pointer font-mono text-sm font-semibold shadow-ziggurat-800 drop-shadow-md;
   @apply transition-all duration-300;
+
   &:hover {
     @apply bg-ziggurat-400 text-ziggurat-100 px-4 mx-0;
   }
 }
+
 /* Markup */
 .markup a {
   @apply text-ziggurat-600 hover:underline;
@@ -199,9 +212,11 @@ footer > .fa-solid {
   @apply flex-row gap-4 items-baseline;
   @apply drop-shadow-lg;
 }
+
 .tooltip.tooltip-bad {
   @apply bg-ziggurat-700 text-ziggurat-50 shadow-ziggurat-950;
 }
+
 .tooltip-icon {
   @apply bg-ziggurat-100 text-ziggurat-600 rounded-full p-1;
   @apply flex justify-center items-center;
