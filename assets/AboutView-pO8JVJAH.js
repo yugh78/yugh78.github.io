@@ -1,0 +1,1 @@
+import{_ as e,c as t,a as c,b as s,o as a}from"./index-BcbFKKII.js";const o={},r=s("span",{class:"letter-highlight"},"С",-1);function n(_,l){return a(),t("h1",null,[r,c("траница с дополнительными сведениями")])}const d=e(o,[["render",n]]);export{d as default};
