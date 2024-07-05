@@ -6,7 +6,7 @@ const Head = {
   meta: [
     {
       property: 'og:image',
-      content: window.location.host + preview
+      content: 'https://' + window.location.host + preview
     },
     {
       property: 'og:url',
