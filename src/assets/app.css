@@ -1,18 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import './button.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col;
+  @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col text-ziggurat-950 text-balance;
 }
 
 #app {
-  @apply grow flex-col flex;
+  @apply grow flex-col-reverse md:flex-col flex gap-4;
 }
 
 main,
-footer,
-header {
+footer {
   @apply px-4 md:px-10;
 }
 
@@ -21,13 +23,15 @@ main {
 }
 
 h1 {
-  @apply pb-3 text-4xl md:text-7xl text-center font-amatic;
-  letter-spacing: 0.6rem;
+  @apply pb-3 text-5xl md:text-8xl text-center font-dela-gothic font-bold;
+  letter-spacing: 0.3rem;
   font-weight: 700;
+  line-height: 1.2;
 }
 
 h2 {
-  @apply text-3xl md:text-5xl py-10 text-center font-amatic;
+  @apply text-3xl md:text-5xl py-10 text-center font-bold;
+  letter-spacing: 0.1rem;
   /* letter-spacing: 0.4rem; */
 }
 
@@ -118,12 +122,6 @@ kbd {
   line-height: 1.75;
 }
 
-.font-amatic {
-  font-family: 'Amatic SC', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
 .footer-link {
   @apply text-lg flex flex-row items-center gap-2 justify-start;
   @apply even:text-ziggurat-500 hover:text-ziggurat-600 active:text-ziggurat-700 odd:text-ziggurat-400;
@@ -136,20 +134,6 @@ footer>.fa-solid {
 
 .mobile-clamp {
   max-width: 640px;
-}
-
-.btn {
-  @apply rounded-lg w-full py-2 px-6 text-center select-none;
-  @apply drop-shadow-lg hover:drop-shadow-xl;
-  @apply transition-all duration-300;
-}
-
-.btn.btn-flat {
-  @apply bg-ziggurat-500 hover:bg-ziggurat-600 active:bg-ziggurat-700 text-ziggurat-50;
-}
-
-.btn.btn-flat[disabled] {
-  @apply bg-ziggurat-100 text-ziggurat-600 drop-shadow-xl shadow-ziggurat-100;
 }
 
 /* Projects section */
@@ -165,6 +149,7 @@ footer>.fa-solid {
 
 .project-card-content {
   @apply grow flex flex-col justify-end p-6 gap-3 rounded-xl;
+  @apply transition-all duration-700;
   /* Gradient */
   /* @apply from-transparent to-ziggurat-600 bg-gradient-to-b; */
 }
@@ -172,7 +157,7 @@ footer>.fa-solid {
 .project-card-body {
   @apply text-ziggurat-50 border border-ziggurat-400 grow p-4 rounded-md flex flex-col gap-3 justify-between;
   @apply bg-ziggurat-600 shadow-ziggurat-700 bg-opacity-40 backdrop-filter backdrop-blur-sm;
-  @apply hover:-translate-y-1 transition-all duration-200 hover:drop-shadow-xl;
+  @apply transition-all duration-200 hover:drop-shadow-xl;
 }
 
 .project-card-body-content {
@@ -220,4 +205,42 @@ footer>.fa-solid {
 .tooltip-icon {
   @apply bg-ziggurat-100 text-ziggurat-600 rounded-full p-1;
   @apply flex justify-center items-center;
+}
+
+.nav-buttons {
+  /* Base */
+  @apply flex flex-row rounded-full p-2 gap-2;
+  @apply bg-ziggurat-500;
+}
+
+.nav-btn {
+  /* Inheritance */
+  @apply btn;
+  /* Base */
+  @apply rounded-full items-center py-0;
+  /* Colors */
+  @apply bg-transparent text-ziggurat-50 hover:bg-ziggurat-400 active:bg-ziggurat-300 active:text-ziggurat-900;
+}
+
+.nav-btn.selected {
+  @apply cursor-default;
+  /* Colors */
+  @apply bg-ziggurat-200 text-ziggurat-950;
+  /* hover */
+  @apply active:-translate-y-1 hover:shadow-lg;
+}
+
+.nav-buttons-separator {
+  @apply min-w-2;
+}
+
+.nav-icons {
+  @apply flex flex-row gap-1 rounded-full p-2;
+  @apply bg-ziggurat-200;
+}
+
+.nav-i {
+  @apply rounded-full px-2 text-xl aspect-square flex flex-row justify-center items-center;
+  @apply hover:bg-ziggurat-400 hover:text-ziggurat-50 hover:drop-shadow-lg;
+  @apply transition-all duration-300;
 }

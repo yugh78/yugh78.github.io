@@ -40,8 +40,8 @@ const SKILLS = [
 ]
 </script>
 <template>
-  <section>
-    <h2>Мои навыки</h2>
+  <section :id="sectionId">
+    <h2><span class="letter-highlight">М</span>ои навыки</h2>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4"
     >

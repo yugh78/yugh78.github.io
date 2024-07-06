@@ -22,7 +22,9 @@ module.exports = {
     fontFamily: {
       sans: ['Roboto', 'sans'],
       serif: ['PT Serif', 'serif'],
-      mono: ['IBM Plex Mono', 'mono']
+      mono: ['IBM Plex Mono', 'mono'],
+      amatic: ['Amatic SC', 'sans'],
+      'dela-gothic': ['Dela Gothic One', 'sans']
     }
   },
   plugins: []

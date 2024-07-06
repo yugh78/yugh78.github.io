@@ -1,0 +1,23 @@
+@layer components {
+  .btn {
+    /* Base */
+    @apply rounded-lg w-full py-2 px-6 text-center select-none flex flex-row gap-2 justify-center items-baseline;
+    /* Shadows */
+    @apply drop-shadow-lg hover:drop-shadow-xl;
+    /* Animations */
+    @apply transition-all duration-300;
+  }
+
+  .btn-flat {
+    /* Inheritance */
+    @apply btn;
+    /* Base */
+    @apply bg-ziggurat-500 text-ziggurat-50;
+    @apply hover:bg-ziggurat-600 active:bg-ziggurat-700;
+
+    /* Disabled */
+    &[disabled] {
+      @apply bg-ziggurat-100 text-ziggurat-600 drop-shadow-xl shadow-ziggurat-100;
+    }
+  }
+}

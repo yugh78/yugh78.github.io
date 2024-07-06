@@ -17,7 +17,7 @@ const SUMMARIES = [
 ]
 </script>
 <template>
-  <section>
+  <section :id="sectionId">
     <h2>Кратко <span class="letter-highlight">о</span>бо мне</h2>
     <div class="card-container">
       <SummaryCard v-for="sum in SUMMARIES" :key="sum" :img="sum.img" :text="sum.text" />

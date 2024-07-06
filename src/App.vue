@@ -12,5 +12,5 @@ console.log('load preview' + preview)
   <main>
     <RouterView />
   </main>
-  <TheFooter />
+  <!-- <TheFooter /> -->
 </template>

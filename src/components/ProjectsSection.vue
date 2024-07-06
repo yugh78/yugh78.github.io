@@ -1,6 +1,6 @@
 <template>
   <section :id="sectionId">
-    <h2>Мои проекты</h2>
+    <h2>М<span class="letter-highlight">о</span>и проекты</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
       <div v-for="proj in PROJECTS" :key="proj.name" class="flex flex-col gap-2 justify-between">
         <div class="project-card">
@@ -39,12 +39,12 @@ defineProps({
 import ProjectTagsContainer from './projects/ProjectTags.vue'
 import ProjectActions from './projects/ProjectActions.vue'
 
-import image1 from '../images/abstract/1.svg'
-import image2 from '../images/abstract/2.svg'
-import image3 from '../images/abstract/3.svg'
-import gif1 from '../images/projects/profile-site.gif'
-import gif2 from '../images/projects/tg-bot.gif'
-import gif3 from '../images/projects/pizza.gif'
+import image1 from '@/images/abstract/1.svg'
+import image2 from '@/images/abstract/2.svg'
+import image3 from '@/images/abstract/3.svg'
+import gif1 from '@/images/projects/profile-site.gif'
+import gif2 from '@/images/projects/tg-bot.gif'
+import gif3 from '@/images/projects/pizza.gif'
 
 const icons = {
   dummy: 'fa-regular fa-circle hover:fa-solid',

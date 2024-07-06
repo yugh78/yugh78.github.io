@@ -1,16 +1,22 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import { LINKS } from '@/data/links'
 </script>
 <template>
   <footer class="bg-ziggurat-200 flex flex-row px-10 py-7 mt-10 gap-12 flex-wrap">
     <div>
       <h5>Ссылки</h5>
+
       <div class="">
-        <a href="https://t.me/mathuc" class="footer-link group/link"
-          ><i class="group-hover/link:text-blue-500 fa-telegram fa-brands"></i> Мой telegram</a
+        <a
+          v-for="link in LINKS"
+          :key="link.url"
+          class="footer-link group/link"
+          :href="link.url"
+          target="_blank"
         >
-        <a href="https://github.com/yugh78" class="footer-link group/link"
-          ><i class="fa-github fa-brands group-hover/link:text-black"></i> Мой github</a
+          <i :class="link.service.icon + ' ' + link.service.color"></i>
+          {{ link.title }}</a
         >
       </div>
     </div>
