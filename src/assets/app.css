@@ -14,15 +14,11 @@ body {
 }
 
 main {
-  @apply px-4 md:px-10 flex flex-col;
+  @apply p-4 md:p-10 flex flex-col grow;
 }
 
 footer {
   @apply px-4 md:px-10;
-}
-
-main {
-  @apply grow;
 }
 
 h1 {
@@ -157,7 +153,7 @@ footer>.fa-solid {
   /* @apply from-transparent to-ziggurat-600 bg-gradient-to-b; */
 }
 
-.project-card-body {
+rounded-none md:rounded-full .project-card-body {
   @apply text-ziggurat-50 border border-ziggurat-400 grow p-4 rounded-md flex flex-col gap-3 justify-between;
   @apply bg-ziggurat-600 shadow-ziggurat-700 bg-opacity-40 backdrop-filter backdrop-blur-sm;
   @apply transition-all duration-200 hover:drop-shadow-xl;

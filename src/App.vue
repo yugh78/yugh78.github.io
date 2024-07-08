@@ -8,7 +8,7 @@ console.log('load preview' + preview)
 </script>
 
 <template>
-  <div class="flex flex-col flex-grow">
+  <div class="flex flex-col-reverse md:flex-col gap-4 flex-grow">
     <div
       class="absolute bg-cover min-w-full min-h-full -z-50 opacity-10 flex-grow"
       :style="{ 'background-image': `url('${background}')` }"
