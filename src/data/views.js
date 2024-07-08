@@ -5,6 +5,11 @@ const VIEWS = [
     path: '/'
   },
   {
+    title: 'Обо мне',
+    icon: 'fas fa-user-large',
+    path: '/about'
+  },
+  {
     title: 'Сотрудничество',
     icon: 'fas fa-briefcase',
     path: '/job'

@@ -13,7 +13,10 @@ body {
   @apply grow flex-col-reverse md:flex-col flex gap-4;
 }
 
-main,
+main {
+  @apply px-4 md:px-10 flex flex-col;
+}
+
 footer {
   @apply px-4 md:px-10;
 }
@@ -23,14 +26,14 @@ main {
 }
 
 h1 {
-  @apply pb-3 text-5xl md:text-8xl text-center font-dela-gothic font-bold;
+  @apply pb-3 text-5xl md:text-8xl text-center font-bold;
   letter-spacing: 0.3rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
 h2 {
-  @apply text-3xl md:text-5xl py-10 text-center font-bold;
+  @apply text-4xl md:text-5xl pt-20 pb-5 text-center font-bold;
   letter-spacing: 0.1rem;
   /* letter-spacing: 0.4rem; */
 }
@@ -217,7 +220,7 @@ footer>.fa-solid {
   /* Inheritance */
   @apply btn;
   /* Base */
-  @apply rounded-full items-center py-0;
+  @apply rounded-full items-center py-0 px-2 md:px-6;
   /* Colors */
   @apply bg-transparent text-ziggurat-50 hover:bg-ziggurat-400 active:bg-ziggurat-300 active:text-ziggurat-900;
 }
@@ -242,5 +245,5 @@ footer>.fa-solid {
 .nav-i {
   @apply rounded-full px-2 text-xl aspect-square flex flex-row justify-center items-center;
   @apply hover:bg-ziggurat-400 hover:text-ziggurat-50 hover:drop-shadow-lg;
-  @apply transition-all duration-300;
+  @apply transition-all duration-500;
 }

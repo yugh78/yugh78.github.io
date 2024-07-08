@@ -3,24 +3,33 @@ import { SECTIONS } from '@/data/sections'
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import SummarySection from '@/components/SummarySection.vue'
-import { OpenGraph, Head, getHead } from '@/data/openGraph'
-import { useHead, useSeoMeta } from '@unhead/vue'
+import { getHead } from '@/data/openGraph'
+import { useHead } from '@unhead/vue'
 
-// useSeoMeta(OpenGraph)
 useHead(getHead('Главная'))
 </script>
 <template>
-  <section class="flex-grow min-h-screen flex flex-row justify-center">
-    <div class="flex flex-col justify-center gap-6">
-      <h1><span class="letter-highlight">П</span>ривет, подписчики, я Евгений Дмитриевич</h1>
-      <div class="mt-10 text-center text-2xl text-ziggurat-600 gap-10 items-baseline">
-        Это мой сайт-визитка
+  <section class="flex-grow min-h-fit flex flex-col justify-center">
+    <div class="flex flex-col justify-center gap-10">
+      <div class="flex flex-col gap-1">
+        <h1
+          class="font-dela-gothic text-transparent bg-clip-text from-ziggurat-500 to-ziggurat-950 bg-gradient-to-br"
+        >
+          <span class="letter-highlight">П</span>ривет, подписчики, я Евгений Дмитриевич
+        </h1>
+        <div class="mt-4 text-center text-2xl text-ziggurat-600 gap-10 items-baseline">
+          Это мой сайт-визитка
+        </div>
       </div>
-      <i class="text-4xl fas fa-arrow-down animate-bounce text-center text-ziggurat-500"></i>
+      <div class="grid grid-cols-1 md:grid-cols-3">
+        <div class=""></div>
+        <a
+          href="about"
+          class="btn-flat text-3xl rounded-full py-4 hover:-translate-y-1 hover:bg-opacity-75 hover:backdrop-blur-lg"
+          >Обо мне <i class="fas fa-arrow-right text-center ease-linear"></i
+        ></a>
+        <div class=""></div>
+      </div>
     </div>
   </section>
-
-  <SummarySection :section-id="SECTIONS.summary.id" />
-  <SkillsSection :section-id="SECTIONS.skills.id" />
-  <ProjectsSection :section-id="SECTIONS.projects.id" />
 </template>

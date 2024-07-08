@@ -3,14 +3,21 @@ import { RouterLink, RouterView } from 'vue-router'
 import TheFooter from './components/TheFooter.vue'
 import TheHeader from './components/TheHeader.vue'
 import preview from './images/preview.png'
+import background from './images/abstract/bg.svg'
 console.log('load preview' + preview)
 </script>
 
 <template>
-  <TheHeader />
+  <div class="flex flex-col flex-grow">
+    <div
+      class="absolute bg-cover min-w-full min-h-full -z-50 opacity-10 flex-grow"
+      :style="{ 'background-image': `url('${background}')` }"
+    ></div>
+    <TheHeader />
 
-  <main>
-    <RouterView />
-  </main>
+    <main>
+      <RouterView />
+    </main>
+  </div>
   <!-- <TheFooter /> -->
 </template>
