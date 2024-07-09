@@ -218,7 +218,7 @@ rounded-none md:rounded-full .project-card-body {
   /* Base */
   @apply rounded-full py-0 px-2 md:px-6 flex justify-center items-center gap-2;
   /* Colors */
-  @apply bg-transparent text-ziggurat-50 hover:bg-ziggurat-400 hover:drop-shadow-2xl shadow-ziggurat-800 active:bg-ziggurat-300 active:text-ziggurat-900;
+  @apply bg-transparent text-ziggurat-50 hover:bg-ziggurat-400 hover:drop-shadow-lg shadow-ziggurat-800 active:bg-ziggurat-300 active:text-ziggurat-900;
   /* Animations */
   @apply transition-all duration-100;
 }
