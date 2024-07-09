@@ -3,6 +3,7 @@ import { SECTIONS } from '@/data/sections'
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import SummarySection from '@/components/SummarySection.vue'
+import { RouterLink } from 'vue-router'
 import { getHead } from '@/data/openGraph'
 import { useHead } from '@unhead/vue'
 
@@ -23,11 +24,11 @@ useHead(getHead('Главная'))
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3">
         <div class=""></div>
-        <a
-          href="about"
+        <RouterLink
+          to="/about"
           class="btn-flat text-3xl rounded-full py-4 hover:-translate-y-1 hover:bg-opacity-75 hover:backdrop-blur-lg"
           >Обо мне <i class="fas fa-arrow-right text-center ease-linear"></i
-        ></a>
+        ></RouterLink>
         <div class=""></div>
       </div>
     </div>

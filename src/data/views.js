@@ -6,7 +6,7 @@ const VIEWS = [
   },
   {
     title: 'Обо мне',
-    icon: 'fas fa-user-large',
+    icon: 'fas fa-info-circle',
     path: '/about'
   },
   {

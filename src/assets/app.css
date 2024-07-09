@@ -6,11 +6,11 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col text-ziggurat-950 text-balance;
+  @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col text-ziggurat-950 text-balance overflow-x-hidden;
 }
 
 #app {
-  @apply grow flex-col-reverse md:flex-col flex gap-4;
+  @apply grow flex-col-reverse md:flex-col flex gap-4 overflow-x-hidden;
 }
 
 main {
@@ -214,11 +214,13 @@ rounded-none md:rounded-full .project-card-body {
 
 .nav-btn {
   /* Inheritance */
-  @apply btn;
+  /* @apply btn; */
   /* Base */
-  @apply rounded-full items-center py-0 px-2 md:px-6;
+  @apply rounded-full py-0 px-2 md:px-6 flex justify-center items-center gap-2;
   /* Colors */
-  @apply bg-transparent text-ziggurat-50 hover:bg-ziggurat-400 active:bg-ziggurat-300 active:text-ziggurat-900;
+  @apply bg-transparent text-ziggurat-50 hover:bg-ziggurat-400 hover:drop-shadow-2xl shadow-ziggurat-800 active:bg-ziggurat-300 active:text-ziggurat-900;
+  /* Animations */
+  @apply transition-all duration-100;
 }
 
 .nav-btn.selected {
