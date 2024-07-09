@@ -1,8 +1,8 @@
 <script setup>
 import { SECTIONS } from '@/data/sections'
-import ProjectsSection from '@/components/ProjectsSection.vue'
-import SkillsSection from '@/components/SkillsSection.vue'
-import SummarySection from '@/components/SummarySection.vue'
+import ProjectsSection from '@/components/sections/projects/ProjectsSection.vue'
+import SkillsSection from '@/components/sections/skills/SkillsSection.vue'
+import SummarySection from '@/components/sections/summary/SummarySection.vue'
 import { RouterLink } from 'vue-router'
 import { getHead } from '@/data/openGraph'
 import { useHead } from '@unhead/vue'
