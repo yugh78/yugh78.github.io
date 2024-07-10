@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import './button.css';
+@import './typography.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col text-ziggurat-950 text-balance overflow-x-hidden;
+  @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col  overflow-x-hidden;
 }
 
 #app {
   @apply grow flex-col-reverse md:flex-col flex gap-4 overflow-x-hidden;
 }
-
 
 main {
   @apply p-4 md:p-10 flex flex-col grow relative;
@@ -20,27 +20,6 @@ main {
 
 footer {
   @apply px-4 md:px-10;
-}
-
-h1 {
-  @apply pb-3 text-3xl md:text-8xl text-center font-bold;
-  letter-spacing: 0.3rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-h2 {
-  @apply text-4xl md:text-5xl pt-20 pb-5 text-center font-bold;
-  letter-spacing: 0.1rem;
-  /* letter-spacing: 0.4rem; */
-}
-
-h5 {
-  @apply text-2xl mb-3 text-ziggurat-900;
-}
-
-h6 {
-  @apply text-xl;
 }
 
 kbd {
@@ -86,7 +65,7 @@ kbd {
 .skill-card-header {
   @apply flex flex-row gap-3 items-center;
 
-  &>.skill-card-header-text {
+  & > .skill-card-header-text {
     @apply text-2xl text-ziggurat-950;
     font-weight: 500;
   }
@@ -95,7 +74,7 @@ kbd {
 .skill-card-header-icon {
   @apply bg-ziggurat-600 w-10 h-10 rounded-full text-ziggurat-100 flex justify-center items-center shadow-ziggurat-600 drop-shadow-xl;
 
-  &>i {
+  & > i {
     @apply flex p-0 m-0;
   }
 }
@@ -127,8 +106,8 @@ kbd {
   @apply even:text-ziggurat-500 hover:text-ziggurat-600 active:text-ziggurat-700 odd:text-ziggurat-400;
 }
 
-footer>.fas,
-footer>.fa-solid {
+footer > .fas,
+footer > .fa-solid {
   @apply text-ziggurat-600 p-1 text-sm;
 }
 
@@ -183,11 +162,6 @@ rounded-none md:rounded-full .project-card-body {
   &:hover {
     @apply bg-ziggurat-400 text-ziggurat-100 px-4 mx-0;
   }
-}
-
-/* Markup */
-.markup a {
-  @apply text-ziggurat-600 hover:underline;
 }
 
 /* Tooltip */

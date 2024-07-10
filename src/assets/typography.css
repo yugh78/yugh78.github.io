@@ -1,0 +1,28 @@
+@layer components {
+  body {
+    @apply text-ziggurat-950 text-balance;
+  }
+
+  h1 {
+    @apply pb-3 text-3xl md:text-8xl text-center font-bold;
+    line-height: 1.2;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl pt-20 pb-5 text-center font-bold;
+    letter-spacing: 0.1rem;
+  }
+
+  h5 {
+    @apply text-2xl mb-3 text-ziggurat-900;
+  }
+
+  h6 {
+    @apply text-xl;
+  }
+
+  /* Markup */
+  .markup a {
+    @apply text-ziggurat-600 hover:underline;
+  }
+}

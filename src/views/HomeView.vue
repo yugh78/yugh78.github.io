@@ -26,11 +26,9 @@ useHead(getHead('Главная'))
         <div class=""></div>
         <RouterLink
           to="/about"
-          class="btn-flat text-3xl rounded-full py-4 hover:-translate-y-1 hover:bg-opacity-75 hover:backdrop-blur-lg"
+          class="btn-flat rounded-full py-4 hover:-translate-y-1 hover:bg-opacity-75 hover:backdrop-blur-lg"
         >
-          <h1 class="p-0 m-0">
-            Обо мне <i class="fas fa-arrow-right text-center ease-linear"></i>
-          </h1>
+          Обо мне <i class="fas fa-arrow-right text-center ease-linear"></i>
         </RouterLink>
         <div class=""></div>
       </div>
