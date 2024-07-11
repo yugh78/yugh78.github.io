@@ -7,7 +7,7 @@ const ASSET_URL = process.env.ASSET_URL || ''
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: `${ASSET_URL}/sait/`,
+  base: `${ASSET_URL}`,
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
