@@ -1,11 +1,12 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import { SECTIONS } from '@/data/sections'
 import { LINKS } from '@/data/links'
 import { VIEWS } from '@/data/views'
 </script>
 <template>
-  <header class="flex justify-center p-0 mx-0 z-50 w-full items-start overflow-x-hidden">
+  <header
+    class="flex justify-center p-0 mx-0 z-50 w-full items-start overflow-x-hidden fixed md:top-0 bottom-0"
+  >
     <nav
       class="flex flex-col grow gap-4 md:py-4 justify-center items-center md:from-ziggurat-300 via-transparent to-transparent md:bg-gradient-to-b sticky md:top-0"
     >

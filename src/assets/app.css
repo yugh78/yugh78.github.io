@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 body {
-  @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col  overflow-x-hidden;
+  @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col overflow-x-hidden selection:bg-ziggurat-950 selection:text-ziggurat-50;
 }
 
 #app {
@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  @apply p-4 md:p-10 flex flex-col grow relative;
+  @apply p-4 md:p-20 flex flex-col grow relative;
 }
 
 footer {
@@ -24,6 +24,10 @@ footer {
 
 kbd {
   @apply text-ziggurat-900 bg-slate-200 border border-ziggurat-300 px-2 rounded-md;
+}
+
+img {
+  @apply select-none;
 }
 
 .nav-link {

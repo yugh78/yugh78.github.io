@@ -8,10 +8,8 @@ console.log('load preview' + preview)
 </script>
 
 <template>
-  <div class="sticky">
-    <TheHeader />
-  </div>
-  <main>
+  <TheHeader />
+  <main class="mb-20">
     <RouterView />
   </main>
   <div
