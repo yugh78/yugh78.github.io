@@ -20,7 +20,7 @@ export default defineConfig({
           return 'assets/' + asset.name
         },
         chunkFileNames: (chInfo) => {
-          return 'chunks/chunk'
+          return 'chunks/chunk/' + chInfo.name.replace('_', '')
         }
       }
     }
