@@ -1,8 +1,8 @@
 <template>
   <div
-    class="rounded-xl flex flex-col justify-end gap-3 border bg-ziggurat-200 min-h-40 shadow-ziggurat-500 border-ziggurat-500 drop-shadow-sm transition-all p-6 hover:-translate-y-1 duration-300 hover:drop-shadow-xl hover:shadow-ziggurat-800"
+    class="rounded-xl flex flex-col justify-between gap-3 border bg-ziggurat-200 min-h-40 shadow-ziggurat-500 border-ziggurat-500 drop-shadow-sm transition-all p-6 hover:-translate-y-1 duration-300 hover:drop-shadow-2xl hover:shadow-ziggurat-950 grow"
   >
-    <div class="project-card-body-content">
+    <div class="project-card-body-content grow">
       <div class="project-card-body-text">
         <div class="text-2xl font-bold">
           {{ project.name }}
