@@ -20,7 +20,9 @@
   h6 {
     @apply text-xl;
   }
-
+  .letter-highlight {
+    @apply text-ziggurat-700;
+  }
   /* Markup */
   .markup a {
     @apply text-ziggurat-600 hover:underline;

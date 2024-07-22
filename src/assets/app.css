@@ -36,29 +36,6 @@ img {
   @apply transition-all duration-500 delay-75;
   @apply hover:shadow-ziggurat-600 hover:drop-shadow-md;
 }
-
-.card-container {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-10 2xl:grid-cols-3;
-}
-
-.summary-card {
-  @apply hover:-translate-y-1;
-  @apply flex-col lg:flex-row items-center shadow-ziggurat-700 drop-shadow-xl flex border border-ziggurat-400 rounded-xl p-8 gap-8 bg-ziggurat-200 text-lg hover:drop-shadow-2xl transition-all duration-500 hover:border-ziggurat-600;
-}
-
-.summary-card-image {
-  @apply md:max-w-80 lg:max-w-40 grow-0 rounded-md drop-shadow-xl shadow-ziggurat-400;
-}
-
-.summary-card-text {
-  @apply grow text-ziggurat-950 text-balance;
-  font-weight: 400;
-}
-
-.letter-highlight {
-  @apply text-ziggurat-700;
-}
-
 .skill-card {
   @apply bg-ziggurat-100 border border-ziggurat-400 p-6 rounded-xl flex flex-col gap-4 drop-shadow-lg shadow-ziggurat-700 hover:drop-shadow-2xl hover:border-ziggurat-500 justify-center;
   /* Animations */
@@ -120,28 +97,6 @@ footer > .fa-solid {
 }
 
 /* Projects section */
-.project-card {
-  @apply rounded-xl flex bg-ziggurat-50 min-h-40;
-  @apply shadow-ziggurat-800 drop-shadow-md;
-  @apply transition-all duration-200;
-}
-
-.project-card-image {
-  @apply flex flex-col grow rounded-xl bg-cover;
-}
-
-.project-card-content {
-  @apply grow flex flex-col justify-end p-6 gap-3 rounded-xl;
-  @apply transition-all duration-700;
-  /* Gradient */
-  /* @apply from-transparent to-ziggurat-600 bg-gradient-to-b; */
-}
-
-rounded-none md:rounded-full .project-card-body {
-  @apply text-ziggurat-50 border border-ziggurat-400 grow p-4 rounded-md flex flex-col gap-3 justify-between;
-  @apply bg-ziggurat-600 shadow-ziggurat-700 bg-opacity-40 backdrop-filter backdrop-blur-sm;
-  @apply transition-all duration-200 hover:drop-shadow-xl;
-}
 
 .project-card-body-content {
   @apply flex flex-col md:flex-row gap-4;
@@ -149,10 +104,6 @@ rounded-none md:rounded-full .project-card-body {
 
 .project-card-body-text {
   @apply flex flex-col gap-2 justify-between;
-}
-
-.project-card-title {
-  @apply text-2xl font-bold;
 }
 
 .project-tags-container {

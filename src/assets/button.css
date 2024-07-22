@@ -1,3 +1,7 @@
+button {
+  @apply select-none;
+}
+
 @layer components {
   .btn {
     /* Base */

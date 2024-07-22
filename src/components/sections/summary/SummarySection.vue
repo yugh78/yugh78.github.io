@@ -19,7 +19,7 @@ const SUMMARIES = [
 <template>
   <section :id="sectionId">
     <h2>Кратко <span class="letter-highlight">о</span>бо мне</h2>
-    <div class="card-container">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 2xl:grid-cols-3">
       <SummaryCard v-for="sum in SUMMARIES" :key="sum" :img="sum.img" :text="sum.text" />
     </div>
   </section>
