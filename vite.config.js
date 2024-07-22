@@ -16,8 +16,12 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        assetFileNames: 'asset',
-        chunkFileNames: 'chunk'
+        assetFileNames: (asset) => {
+          return 'assets/' + asset.name
+        },
+        chunkFileNames: (chInfo) => {
+          return 'chunks/chunk'
+        }
       }
     }
   }
