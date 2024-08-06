@@ -42,11 +42,9 @@ const SKILLS = [
 <template>
   <section :id="sectionId">
     <h2><span class="letter-highlight">М</span>ои навыки</h2>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4"
-    >
-      <div v-for="skill in SKILLS" :key="skill" class="flex">
-        <div class="skill-card grow">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
+      <div v-for="(skill, index) in SKILLS" :key="index" class="flex">
+        <div class="skill-card grow transition-all duration-500" data-aos="zoom-in-right" :data-aos-delay="index * 200">
           <div class="skill-card-header">
             <div v-if="skill.iconName" class="skill-card-header-icon">
               <i :class="skill.iconName"></i>

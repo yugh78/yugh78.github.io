@@ -36,6 +36,7 @@ img {
   @apply transition-all duration-500 delay-75;
   @apply hover:shadow-ziggurat-600 hover:drop-shadow-md;
 }
+
 .skill-card {
   @apply bg-ziggurat-100 border border-ziggurat-400 p-6 rounded-xl flex flex-col gap-4 drop-shadow-lg shadow-ziggurat-700 hover:drop-shadow-2xl hover:border-ziggurat-500 justify-center;
   /* Animations */
@@ -46,7 +47,7 @@ img {
 .skill-card-header {
   @apply flex flex-row gap-3 items-center;
 
-  & > .skill-card-header-text {
+  &>.skill-card-header-text {
     @apply text-2xl text-ziggurat-950;
     font-weight: 500;
   }
@@ -55,7 +56,7 @@ img {
 .skill-card-header-icon {
   @apply bg-ziggurat-600 w-10 h-10 rounded-full text-ziggurat-100 flex justify-center items-center shadow-ziggurat-600 drop-shadow-xl;
 
-  & > i {
+  &>i {
     @apply flex p-0 m-0;
   }
 }
@@ -87,8 +88,8 @@ img {
   @apply even:text-ziggurat-500 hover:text-ziggurat-600 active:text-ziggurat-700 odd:text-ziggurat-400;
 }
 
-footer > .fas,
-footer > .fa-solid {
+footer>.fas,
+footer>.fa-solid {
   @apply text-ziggurat-600 p-1 text-sm;
 }
 
