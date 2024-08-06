@@ -20,7 +20,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['Roboto', 'sans'],
+      sans: ['Inter', 'Roboto', 'sans'],
       serif: ['PT Serif', 'serif'],
       mono: ['IBM Plex Mono', 'mono'],
       amatic: ['Amatic SC', 'sans'],
