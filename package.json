@@ -1,6 +1,6 @@
 {
   "name": "chepuha",
-  "version": "0.0.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@unhead/vue": "^1.9.15",
+    "aos": "^2.3.4",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },
