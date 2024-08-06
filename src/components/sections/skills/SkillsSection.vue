@@ -44,21 +44,24 @@ const SKILLS = [
     <h2><span class="letter-highlight">М</span>ои навыки</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
       <div v-for="(skill, index) in SKILLS" :key="index" class="flex">
-        <div class="skill-card grow transition-all duration-500" data-aos="zoom-in-right" :data-aos-delay="index * 200">
-          <div class="skill-card-header">
-            <div v-if="skill.iconName" class="skill-card-header-icon">
-              <i :class="skill.iconName"></i>
-            </div>
-            <div class="skill-card-header-text">{{ skill.header }}</div>
-          </div>
-          <p v-if="skill.description" v-html="skill.description" class="skill-card-body"></p>
-          <div v-if="skill.subSkills" class="flex flex-col gap-4">
-            <div v-for="sub in skill.subSkills" :key="sub.header" class="skill-subcard">
-              <div class="skill-subcard-header">
-                {{ sub.header }}
+        <div class="flex grow" data-aos="zoom-in-right" :data-aos-delay="index * 200">
+
+          <div class="skill-card grow transition-all duration-500">
+            <div class="skill-card-header">
+              <div v-if="skill.iconName" class="skill-card-header-icon">
+                <i :class="skill.iconName"></i>
               </div>
-              <div v-if="sub.description" class="skill-subcard-body">
-                {{ sub.description }}
+              <div class="skill-card-header-text">{{ skill.header }}</div>
+            </div>
+            <p v-if="skill.description" v-html="skill.description" class="skill-card-body"></p>
+            <div v-if="skill.subSkills" class="flex flex-col gap-4">
+              <div v-for="sub in skill.subSkills" :key="sub.header" class="skill-subcard">
+                <div class="skill-subcard-header">
+                  {{ sub.header }}
+                </div>
+                <div v-if="sub.description" class="skill-subcard-body">
+                  {{ sub.description }}
+                </div>
               </div>
             </div>
           </div>
