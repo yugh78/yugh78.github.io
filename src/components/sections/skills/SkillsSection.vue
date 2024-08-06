@@ -16,7 +16,7 @@ const SKILLS = [
   {
     header: 'SQL',
     iconName: 'fa-solid fa-database',
-    description: 'Знания базовых запросов (<kbd>SELECT</kbd>, <kbd>JOIN</kbd>, <kbd>INSERT</kbd>)'
+    description: 'Знания базовых запросов <em>(таких как: <kbd>SELECT</kbd>, <kbd>JOIN</kbd>, <kbd>INSERT</kbd>)</em>'
   },
   {
     header: 'Figma',
@@ -42,7 +42,7 @@ const SKILLS = [
 <template>
   <section :id="sectionId">
     <h2><span class="letter-highlight">М</span>ои навыки</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-6 gap-5">
       <div v-for="(skill, index) in SKILLS" :key="index" class="flex">
         <div class="flex grow" data-aos="zoom-in-right" :data-aos-delay="index * 200">
 

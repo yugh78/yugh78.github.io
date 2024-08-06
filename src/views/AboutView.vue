@@ -20,7 +20,7 @@ AOS.init();
     </h1>
     <div class="text-center text-2xl text-ziggurat-600">Это мой сайт-визитка</div>
   </div>
-  <div class="flex flex-col gap-36 sm:mb-56">
+  <div class="flex flex-col gap-36">
 
     <SummarySection :section-id="SECTIONS.summary.id" data-aos="fade-up" data-aos-anchor-placement="center-bottom" />
     <SkillsSection :section-id="SECTIONS.skills.id" data-aos="fade-up" data-aos-anchor-placement="center-bottom" />
