@@ -51,7 +51,7 @@ const SKILLS = [
               <div v-if="skill.iconName" class="skill-card-header-icon">
                 <i :class="skill.iconName"></i>
               </div>
-              <div class="skill-card-header-text">{{ skill.header }}</div>
+              <div class="skill-card-header-text text-ziggurat-600 font-petrov font-semibold">{{ skill.header }}</div>
             </div>
             <p v-if="skill.description" v-html="skill.description" class="skill-card-body"></p>
             <div v-if="skill.subSkills" class="flex flex-col gap-4">

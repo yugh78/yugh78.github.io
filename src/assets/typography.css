@@ -1,15 +1,44 @@
+@font-face {
+  font-family: 'Petrov';
+  src: url('fonts/PetrovSans-Trial-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Petrov';
+  src: url('fonts/PetrovSans-Trial-SemiBold.woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Petrov';
+  src: url('fonts/PetrovSans-Trial-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Petrov';
+  src: url('fonts/PetrovSans-Trial-ExtraBold.woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
 @layer components {
   body {
     @apply text-ziggurat-950 text-balance;
   }
 
   h1 {
-    @apply pb-3 text-3xl md:text-8xl text-center font-bold;
+    @apply pb-3 text-3xl md:text-8xl text-center font-extrabold;
     line-height: 1.2;
   }
 
   h2 {
-    @apply text-4xl md:text-5xl pt-20 pb-5 text-center font-bold;
+    @apply text-4xl md:text-5xl my-5 pb-5 text-center font-semibold font-petrov text-ziggurat-600;
     letter-spacing: 0.1rem;
   }
 

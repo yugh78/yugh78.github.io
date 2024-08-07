@@ -24,7 +24,8 @@ module.exports = {
       serif: ['PT Serif', 'serif'],
       mono: ['IBM Plex Mono', 'mono'],
       amatic: ['Amatic SC', 'sans'],
-      'dela-gothic': ['Dela Gothic One', 'sans']
+      'dela-gothic': ['Dela Gothic One', 'sans'],
+      petrov: ['Petrov', 'sans']
     }
   },
   plugins: []

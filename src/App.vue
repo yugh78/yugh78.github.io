@@ -12,9 +12,7 @@ console.log('load preview' + preview)
   <main class="mb-20">
     <RouterView />
   </main>
-  <div
-    class="absolute bg-cover min-w-full min-h-full -z-50 opacity-10 flex-grow"
-    :style="{ 'background-image': `url('${background}')` }"
-  ></div>
-  <!-- <TheFooter /> -->
+  <div class="absolute bg-cover min-w-full min-h-full -z-50 opacity-10 flex-grow"
+    :style="{ 'background-image': `url('${background}')` }"></div>
+  <TheFooter />
 </template>

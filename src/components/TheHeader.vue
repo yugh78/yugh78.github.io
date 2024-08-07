@@ -8,10 +8,9 @@ import { VIEWS } from '@/data/views'
     <nav
       class="flex flex-col grow gap-4 md:py-4 justify-center items-center md:from-ziggurat-300 via-transparent to-transparent md:bg-gradient-to-b sticky md:top-0">
       <div
-        class="flex flex-row grow md:rounded-full p-2 gap-2 bg-ziggurat-500 md:grow-0 drop-shadow-lg shadow-ziggurat-500 hover:shadow-ziggurat-950 transition-all duration-1000 min-w-full md:min-w-fit">
+        class="font-petrov flex flex-row grow md:rounded-full p-2 gap-2 bg-ziggurat-500 md:grow-0 drop-shadow-lg shadow-ziggurat-500 hover:shadow-ziggurat-950 transition-all duration-1000 min-w-full md:min-w-fit">
         <RouterLink v-for="view in VIEWS" :to="view.path" :key="view.title" class="nav-btn group min-w-fit text-center"
           active-class="selected grow">
-          <span class="v-0"></span>
           <i :class="view.icon"></i>
           <div class="w-0 group-[.selected]:w-auto group-hover:w-auto duration-1000">
             <span class="invisible group-[.selected]:visible group-hover:visible duration-0">
