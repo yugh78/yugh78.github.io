@@ -112,11 +112,15 @@ footer>.fa-solid {
 }
 
 .project-tag {
-  @apply bg-ziggurat-300 text-ziggurat-950 px-3 py-1 mx-1 rounded-full cursor-pointer font-mono text-sm font-semibold shadow-ziggurat-800 drop-shadow-md;
+  @apply bg-ziggurat-300 text-ziggurat-950 select-none px-3 py-1 rounded-full cursor-pointer font-mono text-sm font-semibold shadow-ziggurat-800 drop-shadow-md;
   @apply transition-all duration-300;
 
   &:hover {
-    @apply bg-ziggurat-400 text-ziggurat-100 px-4 mx-0;
+    @apply bg-ziggurat-400 text-ziggurat-100;
+  }
+
+  &.active {
+    @apply bg-ziggurat-400 text-ziggurat-100
   }
 }
 
