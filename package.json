@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@unhead/vue": "^1.9.15",
+    "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"

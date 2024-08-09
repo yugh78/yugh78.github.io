@@ -2,17 +2,20 @@ const VIEWS = [
   {
     title: 'Главная',
     icon: 'fas fa-home',
-    path: '/'
+    path: '/',
+    show: false
   },
   {
     title: 'Обо мне',
     icon: 'fas fa-info-circle',
-    path: '/about'
+    path: '/about',
+    show: false
   },
   {
     title: 'Сотрудничество',
     icon: 'fas fa-briefcase',
-    path: '/job'
+    path: '/job',
+    show: false
   }
 ]
 

@@ -10,6 +10,10 @@ body {
   @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col overflow-x-hidden selection:bg-ziggurat-950 selection:text-ziggurat-50;
 }
 
+* {
+  @apply transition-all duration-100 delay-75
+}
+
 #app {
   @apply grow flex-col-reverse md:flex-col flex gap-4 overflow-x-hidden;
 }

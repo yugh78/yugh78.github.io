@@ -1,26 +1,31 @@
 <template>
   <section :id="sectionId">
     <h2>М<span class="letter-highlight">о</span>и проекты</h2>
-    <div v-if="selectedTags.length > 0" class="flex flex-row flex-wrap py-5 gap-2">
-      <div v-for="tag in sortedSelectedTags"
-        class="flex gap-2 items-center uppercase font-petrov select-none bg-ziggurat-400 hover:bg-ziggurat-500 text-ziggurat-50 rounded-full px-1 ps-4 py-1 shadow-ziggurat-900 drop-shadow-lg transition-all duration-300">
-        <i :class="tag.icon"></i>
-        <div class="ps-2">
-          {{ tag.title }}
-        </div>
-        <button @click="removeTag(tag, selectedTags)"
-          class="rounded-full h-8 w-8 hover:bg-ziggurat-50 hover:bg-opacity-70 hover:text-ziggurat-600 active:bg-opacity-90 p-1 flex items-center justify-center transition-all duration-300">
-          <i class="fas fa-xmark"></i>
-        </button>
+    <Transition leave-active-class="animate__animated animate__fadeOutUp">
+      <div v-if="selectedTags.length > 0" class="flex flex-row flex-wrap py-5 gap-2">
+        <TransitionGroup leave-active-class="animate__animated animate__fadeOutLeft">
+          <div v-for="tag in sortedSelectedTags" data-aos="fade-right"
+            class="flex gap-2 items-center uppercase font-petrov select-none bg-ziggurat-400 hover:bg-ziggurat-500 text-ziggurat-50 rounded-full px-1 ps-4 py-1 shadow-ziggurat-900 drop-shadow-lg transition-all duration-300">
+            <i :class="tag.icon"></i>
+            <div class="ps-2">
+              {{ tag.title }}
+            </div>
+            <button @click="removeTag(tag, selectedTags)"
+              class="rounded-full h-8 w-8 hover:bg-ziggurat-50 hover:bg-opacity-70 hover:text-ziggurat-600 active:bg-opacity-90 p-1 flex items-center justify-center transition-all duration-300">
+              <i class="fas fa-xmark"></i>
+            </button>
+          </div>
+        </TransitionGroup>
       </div>
-    </div>
+    </Transition>
     <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-5">
-      <div v-for="(proj, index) in projects" :key="proj.name" class="flex flex-col gap-2 justify-between">
-        <div class="flex grow" data-aos="fade-right" :data-aos-delay="index * 200">
-
-          <ProjectCard :project="proj" :selectedTags="selectedTags" />
+      <TransitionGroup leave-active-class="animate__animated animate__fadeOutLeft">
+        <div v-for="(proj, index) in projects" :key="proj.name" class="flex flex-col gap-2 justify-between">
+          <div class="flex grow" data-aos="fade-right" :data-aos-delay="index * 200">
+            <ProjectCard :project="proj" :selectedTags="selectedTags" />
+          </div>
         </div>
-      </div>
+      </TransitionGroup>
     </div>
   </section>
 </template>
