@@ -19,6 +19,8 @@ const codeTags = {
     react: { title: 'react', icon: 'fab fa-react' },
     js:
         { title: 'js', icon: 'fa-brands fa-js' },
+    tailwind:
+        { title: 'tailwind', icon: icons.dummy },
 }
 
 const data = {
@@ -80,8 +82,8 @@ const data = {
                 tags: [
                     codeTags.htmlCss,
                     codeTags.js,
+                    codeTags.tailwind,
                     { title: 'vue', icon: 'fab fa-vuejs' },
-                    { title: 'tailwind', icon: icons.dummy },
                     { title: 'github-workflow', icon: 'fab fa-github' }
                 ],
                 image: image1,
@@ -153,7 +155,7 @@ const data = {
                 title: 'Chill site',
                 description: 'Небольшой заказ, выполненный совместно с <a href="https://github.com/katy248">товарищем</a>',
                 gif: gif4,
-                tags: [codeTags.htmlCss, codeTags.js, codeTags.react],
+                tags: [codeTags.htmlCss, codeTags.js, codeTags.react, codeTags.tailwind],
                 actions: [{
                     icon: icons.view,
                     title: 'Просмотр', disabled: {
