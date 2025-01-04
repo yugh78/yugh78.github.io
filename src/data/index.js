@@ -90,12 +90,12 @@ const data = {
                 actions: [
                     {
                         title: 'Просмотр',
-                        url: 'https://yugh78.github.io/sait',
+                        url: 'https://yugh78.github.io',
                         icon: icons.view
                     },
                     {
                         title: 'Исходный код',
-                        url: 'https://github.com/yugh78/sait',
+                        url: 'https://github.com/yugh78/yugh78.github.io',
                         icon: icons.sourceCode
                     }
                 ]
