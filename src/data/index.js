@@ -110,7 +110,7 @@ const data = {
                     codeTags.sql,
                     { title: 'python', icon: 'fab fa-python' },
                     { title: 'vk api', icon: 'fab fa-vk' },
-                    { title: 'aiogram', icon: icons.dummy }
+                    { title: 'aiogram', icon: icons.telegram }
                 ],
                 actions: [
                     {
@@ -138,7 +138,7 @@ const data = {
                 actions: [
                     {
                         title: 'Просмотр',
-                        icon: icons.view,
+                        icon: icons.viewDisabled,
                         disabled: {
                             message: 'Заказчик поменял дизайн',
                             icon: icons.notAvailable
@@ -157,7 +157,7 @@ const data = {
                 gif: gif4,
                 tags: [codeTags.htmlCss, codeTags.js, codeTags.react, codeTags.tailwind],
                 actions: [{
-                    icon: icons.view,
+                    icon: icons.viewDisabled,
                     title: 'Просмотр', disabled: {
                         message: 'Сайт пока не опубликован',
                         icon: icons.notAvailable
