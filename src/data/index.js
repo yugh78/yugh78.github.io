@@ -8,175 +8,218 @@ import gif1 from '@/images/projects/profile-site.gif'
 import gif2 from '@/images/projects/tg-bot.gif'
 import gif3 from '@/images/projects/pizza.gif'
 import gif4 from '@/images/projects/chill-site.gif'
+import sirRabbitGif from '@/images/projects/sir-rabbit.gif'
 
 import { icons } from '@/data/icons'
 
 const codeTags = {
-    htmlCss:
-        { title: 'html/css', icon: icons.html },
-    sql:
-        { title: 'sql', icon: icons.sql },
-    react: { title: 'react', icon: 'fab fa-react' },
-    js:
-        { title: 'js', icon: 'fa-brands fa-js' },
-    tailwind:
-        { title: 'tailwind', icon: icons.dummy },
+  htmlCss: { title: 'html/css', icon: icons.html },
+  sql: { title: 'sql', icon: icons.sql },
+  react: { title: 'react', icon: 'fab fa-react' },
+  js: { title: 'js', icon: 'fa-brands fa-js' },
+  tailwind: { title: 'tailwind', icon: icons.dummy },
+  vue: { title: 'vue', icon: 'fab fa-vuejs' },
+  python: { title: 'python', icon: 'fab fa-python' },
+  nuxt: { title: 'nuxt', icon: icons.dummy },
+  ts: { title: 'ts', icon: icons.dummy },
+  directus: {
+    title: 'directus',
+    icon: icons.dummy
+  },
+  docker: {
+    title: 'docker',
+    icon: 'fab fa-docker'
+  }
 }
 
 const data = {
-    lists: [{
-        title: "Кратко обо мне", description: "", items: [
-            {
-                title: "",
-                text: 'Cтудент третьего курса по направлению <em>Программная инженерия</em> в ТУ им. А.А. Леонова',
-                img: me
-            },
-            {
-                title: "",
-                text: 'Занимаюсь каратэ Киокушинкай <em>8 лет</em>, имею черный пояс, 1 дан. Так что могу и... на шпагат сесть',
-                img: me_and_who
-            }
-        ]
+  lists: [
+    {
+      title: 'Кратко обо мне',
+      description: '',
+      items: [
+        {
+          title: '',
+          text: 'Cтудент третьего курса по направлению <em>Программная инженерия</em> в ТУ им. А.А. Леонова',
+          img: me
+        },
+        {
+          title: '',
+          text: 'Занимаюсь каратэ Киокушинкай <em>8 лет</em>, имею черный пояс, 1 дан. Так что могу и... на шпагат сесть',
+          img: me_and_who
+        }
+      ]
     },
     {
-        title: "Мои навыки",
-        items: [
+      title: 'Мои навыки',
+      items: [
+        {
+          title: 'Tailwind',
+          description: 'Этот сайт я накидал с использованием <kbd>tailwind</kbd>',
+          iconName: 'fa-brands fa-css3'
+        },
+        {
+          title: 'CSS/HTML',
+          iconName: 'fa-brands fa-html5'
+        },
+        {
+          title: 'SQL',
+          iconName: 'fa-solid fa-database',
+          description:
+            'Знания базовых запросов <em>(таких как: <kbd>SELECT</kbd>, <kbd>JOIN</kbd>, <kbd>INSERT</kbd>)</em>'
+        },
+        {
+          title: 'Figma',
+          iconName: 'fa-brands fa-figma',
+          description: 'Есть аккаунт'
+        },
+        {
+          title: 'Python',
+          iconName: 'fa-brands fa-python',
+          items: [
             {
-                title: 'Tailwind',
-                description: 'Этот сайт я накидал с использованием <kbd>tailwind</kbd>',
-                iconName: 'fa-brands fa-css3'
+              title: 'aiogram',
+              description: 'Разрабатывал телеграм ботов на заказ'
             },
             {
-                title: 'CSS/HTML',
-                iconName: 'fa-brands fa-html5'
-            },
-            {
-                title: 'SQL',
-                iconName: 'fa-solid fa-database',
-                description: 'Знания базовых запросов <em>(таких как: <kbd>SELECT</kbd>, <kbd>JOIN</kbd>, <kbd>INSERT</kbd>)</em>'
-            },
-            {
-                title: 'Figma',
-                iconName: 'fa-brands fa-figma',
-                description: 'Есть аккаунт'
-            },
-            {
-                title: 'Python',
-                iconName: 'fa-brands fa-python',
-                items: [
-                    {
-                        title: 'aiogram',
-                        description: 'Разрабатывал телеграм ботов на заказ'
-                    },
-                    {
-                        title: 'django',
-                        description: 'Только трогал'
-                    }
-                ]
-            }]
-    }, {
-        title: "Мои проекты",
-        items: [
-            {
-                title: 'Мой сайт',
-                tags: [
-                    codeTags.htmlCss,
-                    codeTags.js,
-                    codeTags.tailwind,
-                    { title: 'vue', icon: 'fab fa-vuejs' },
-                    { title: 'github-workflow', icon: 'fab fa-github' }
-                ],
-                image: image1,
-                gif: gif1,
-                description: 'Мой сайт про меня',
-                actions: [
-                    {
-                        title: 'Просмотр',
-                        url: 'https://yugh78.github.io',
-                        icon: icons.view
-                    },
-                    {
-                        title: 'Исходный код',
-                        url: 'https://github.com/yugh78/yugh78.github.io',
-                        icon: icons.sourceCode
-                    }
-                ]
-            },
-            {
-                title: 'Телеграм бот',
-                image: image2,
-                gif: gif2,
-                tags: [
-                    codeTags.sql,
-                    { title: 'python', icon: 'fab fa-python' },
-                    { title: 'vk api', icon: 'fab fa-vk' },
-                    { title: 'aiogram', icon: icons.telegram }
-                ],
-                actions: [
-                    {
-                        title: 'Исходный код',
-                        url: 'https://github.com/yugh78/telegrambot_lurkopab',
-                        icon: icons.sourceCode
-                    }
-                ]
-            },
-            {
-                title: 'PizzaExpress',
-                description:
-                    'Совместный проект с <a href="https://github.com/MainMaestro">товарищем</a> для пиццерии',
-                image: image3,
-                gif: gif3,
-                tags: [
-                    codeTags.htmlCss,
-                    codeTags.sql,
-                    {
-                        title: 'bootstrap',
-                        icon: 'fab fa-bootstrap'
-                    },
-                    { title: 'dotnet', icon: icons.dummy }
-                ],
-                actions: [
-                    {
-                        title: 'Просмотр',
-                        icon: icons.viewDisabled,
-                        disabled: {
-                            message: 'Заказчик поменял дизайн',
-                            icon: icons.notAvailable
-                        }
-                    },
-                    {
-                        title: 'Исходный код',
-                        icon: icons.sourceCode,
-                        url: 'https://github.com/MainMaestro/PizzaExpress'
-                    }
-                ]
-            },
-            {
-                title: 'Chill site',
-                description: 'Небольшой заказ, выполненный совместно с <a href="https://github.com/katy248">товарищем</a>',
-                gif: gif4,
-                tags: [codeTags.htmlCss, codeTags.js, codeTags.react, codeTags.tailwind],
-                actions: [{
-                    icon: icons.viewDisabled,
-                    title: 'Просмотр', disabled: {
-                        message: 'Сайт пока не опубликован',
-                        icon: icons.notAvailable
-
-                    }
-                }, {
-                    title: 'Исходный код',
-                    url: 'https://gitlab.com/Katy248/chill-site',
-                    icon: icons.sourceCode,
-                }]
+              title: 'django',
+              description: 'Только трогал'
             }
-
-        ]
+          ]
+        }
+      ]
+    },
+    {
+      title: 'Мои проекты',
+      items: [
+        {
+          title: 'Мой сайт',
+          tags: [
+            codeTags.htmlCss,
+            codeTags.js,
+            codeTags.tailwind,
+            codeTags.vue,
+            { title: 'github-workflow', icon: 'fab fa-github' }
+          ],
+          image: image1,
+          gif: gif1,
+          description: 'Мой сайт про меня',
+          actions: [
+            {
+              title: 'Просмотр',
+              url: 'https://yugh78.github.io',
+              icon: icons.view
+            },
+            {
+              title: 'Исходный код',
+              url: 'https://github.com/yugh78/yugh78.github.io',
+              icon: icons.sourceCode
+            }
+          ]
+        },
+        {
+          title: 'Телеграм бот',
+          image: image2,
+          gif: gif2,
+          tags: [
+            codeTags.sql,
+            codeTags.python,
+            { title: 'vk api', icon: 'fab fa-vk' },
+            { title: 'aiogram', icon: icons.telegram }
+          ],
+          actions: [
+            {
+              title: 'Исходный код',
+              url: 'https://github.com/yugh78/telegrambot_lurkopab',
+              icon: icons.sourceCode
+            }
+          ]
+        },
+        {
+          title: 'PizzaExpress',
+          description:
+            'Совместный проект с <a href="https://github.com/MainMaestro">товарищем</a> для пиццерии',
+          image: image3,
+          gif: gif3,
+          tags: [
+            codeTags.htmlCss,
+            codeTags.sql,
+            {
+              title: 'bootstrap',
+              icon: 'fab fa-bootstrap'
+            },
+            { title: 'dotnet', icon: icons.dummy }
+          ],
+          actions: [
+            {
+              title: 'Просмотр',
+              icon: icons.viewDisabled,
+              disabled: {
+                message: 'Заказчик поменял дизайн',
+                icon: icons.notAvailable
+              }
+            },
+            {
+              title: 'Исходный код',
+              icon: icons.sourceCode,
+              url: 'https://github.com/MainMaestro/PizzaExpress'
+            }
+          ]
+        },
+        {
+          title: 'Chill site',
+          description:
+            'Небольшой заказ, выполненный совместно с <a href="https://github.com/katy248">товарищем</a>',
+          gif: gif4,
+          tags: [codeTags.htmlCss, codeTags.js, codeTags.react, codeTags.tailwind],
+          actions: [
+            {
+              icon: icons.viewDisabled,
+              title: 'Просмотр',
+              disabled: {
+                message: 'Сайт пока не опубликован',
+                icon: icons.notAvailable
+              }
+            },
+            {
+              title: 'Исходный код',
+              url: 'https://gitlab.com/Katy248/chill-site',
+              icon: icons.sourceCode
+            }
+          ]
+        },
+        {
+          title: 'Сайт для ресторана',
+          gif: sirRabbitGif,
+          tags: [
+            codeTags.htmlCss,
+            codeTags.tailwind,
+            codeTags.vue,
+            codeTags.nuxt,
+            codeTags.ts,
+            codeTags.directus,
+            codeTags.docker
+          ],
+          actions: [
+            {
+              icon: icons.view,
+              title: 'Просмотр',
+              url: 'https://sir-rabbit.ru'
+            },
+            {
+              title: 'Исходный код',
+              url: 'https://github.com/sir-rabbit-restaurant/sir-rabbit-frontend',
+              icon: icons.sourceCode
+            }
+          ]
+        }
+      ]
     }
-    ]
-};
-
-const listByTitle = (title) => {
-    return data.lists.find((item) => item.title === title)
+  ]
 }
 
-export { data, listByTitle };
+const listByTitle = (title) => {
+  return data.lists.find((item) => item.title === title)
+}
+
+export { data, listByTitle }

@@ -47,6 +47,7 @@ const projects = computed(() => {
   }
 
   return projectList.items.filter((item) => {
+    if (!item.tags) return false;
     const itemSelectedTags = item.tags.filter(t => { return selectedTags.includes(t) })
     return itemSelectedTags.length == selectedTags.length
   })

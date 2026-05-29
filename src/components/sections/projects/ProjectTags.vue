@@ -1,5 +1,5 @@
 <template>
-    <div v-if="tags" class="project-tags-container">
+    <div v-if="tags" class="flex flex-row flex-wrap gap-2">
         <div v-for="tag in tags.sort(tagSort)" :class="tagClasses(tag, selectedTags)" :key="tag"
             @click="selectTag(selectedTags, tag) ? 'active' : ''">
             <i :class="tag.icon"></i>

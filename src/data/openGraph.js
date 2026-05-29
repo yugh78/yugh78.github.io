@@ -40,7 +40,7 @@ const OpenGraph = {
 
 const getHead = (title, description = DESCRIPTION) => {
   const head = Head
-  ;(head.title = title + ' | ' + TITLE), (head.description = description)
+  ;((head.title = title + ' | ' + TITLE), (head.description = description))
   return head
 }
 export { OpenGraph, Head, getHead }

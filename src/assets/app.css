@@ -1,11 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-@import './button.css';
-@import './typography.css';
+@import 'tailwindcss';
+@font-face {
+  font-family: 'Petrov';
+  src: url('fonts/PetrovSans-Trial-Regular.woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+  font-family: 'Petrov';
+  src: url('fonts/PetrovSans-Trial-SemiBold.woff2');
+  font-weight: 600;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Petrov';
+  src: url('fonts/PetrovSans-Trial-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Petrov';
+  src: url('fonts/PetrovSans-Trial-ExtraBold.woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@theme {
+    --color-ziggurat-50: #f5f8fa;
+    --color-ziggurat-100: #e9f1f5;
+    --color-ziggurat-200: #cee2e9;
+    --color-ziggurat-300: #b9d5df;
+    --color-ziggurat-400: #73aabd;
+    --color-ziggurat-500: #5191a6;
+    --color-ziggurat-600:  #3e768b;
+    --color-ziggurat-700: #335f71;
+    --color-ziggurat-800: #2d505f;
+    --color-ziggurat-900: #2a4450;
+    --color-ziggurat-950: #1c2c35;
+      --font-sans: 'Roboto', 'sans';
+      --font-serif:'PT Serif', 'serif';
+      --font-mono: 'IBM Plex Mono', 'mono';
+      --font-amatic: 'Amatic SC', 'sans';
+      --font-dela-gothic: 'Dela Gothic One', 'sans';
+      --font-petrov: 'Petrov', 'sans';
+
+}
+
+button {
+  @apply select-none;
+}
+
+@layer components {
+  .btn {
+    /* Base */
+    @apply rounded-lg w-full py-2 px-6 text-center select-none flex flex-row gap-2 justify-center items-baseline;
+    /* Shadows */
+    @apply drop-shadow-lg hover:drop-shadow-xl;
+    /* Animations */
+    @apply transition-all duration-300;
+  }
+
+  .btn-flat {
+    /* Inheritance */
+    /* Base */
+    @apply bg-ziggurat-500 text-ziggurat-50;
+    @apply hover:bg-ziggurat-600 active:bg-ziggurat-700;
+
+    /* Disabled */
+    &[disabled] {
+      @apply bg-ziggurat-100 text-ziggurat-600 drop-shadow-xl shadow-ziggurat-100;
+    }
+  }
+}
+body {
+  @apply text-ziggurat-950 text-balance;
+}
+
+h1 {
+  @apply pb-3 text-3xl md:text-8xl text-center font-extrabold;
+  line-height: 1.2;
+}
+
+h2 {
+  @apply text-4xl md:text-5xl my-5 pb-5 text-center font-semibold font-petrov text-ziggurat-600;
+  letter-spacing: 0.1rem;
+}
+
+h5 {
+  @apply text-2xl mb-3 text-ziggurat-900;
+}
+
+h6 {
+  @apply text-xl;
+}
+
+.letter-highlight {
+  @apply text-ziggurat-700 selection:text-ziggurat-300;
+}
+
+/* Markup */
+.markup a {
+  @apply text-ziggurat-600 hover:underline;
+}
 body {
   @apply min-h-screen from-ziggurat-50 to-ziggurat-400 bg-gradient-to-br flex flex-col overflow-x-hidden selection:bg-ziggurat-950 selection:text-ziggurat-50;
 }
@@ -111,9 +210,6 @@ footer>.fa-solid {
   @apply flex flex-col gap-2 justify-between;
 }
 
-.project-tags-container {
-  @apply flex flex-row flex-wrap gap-2;
-}
 
 .project-tag {
   @apply bg-ziggurat-300 text-ziggurat-950 select-none px-3 py-1 rounded-full cursor-pointer font-mono text-sm font-semibold shadow-ziggurat-800 drop-shadow-md;
@@ -153,7 +249,6 @@ footer>.fa-solid {
 
 .nav-btn {
   /* Inheritance */
-  /* @apply btn; */
   /* Base */
   @apply rounded-full py-0 px-2 md:px-6 flex justify-center items-center gap-2;
   /* Colors */
