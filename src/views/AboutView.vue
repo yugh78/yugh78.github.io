@@ -6,19 +6,40 @@ import SummarySection from '@/components/sections/summary/SummarySection.vue'
 import { getHead } from '@/data/openGraph'
 import { useHead } from '@unhead/vue'
 useHead(getHead('Обо мне'))
+import { ref } from 'vue'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css';
 
 AOS.init();
+
+const aka = [
+  'frontend developer',
+  'спортсмен',
+  '5к часов в rust',
+  'тренер по каратэ',
+  '(ʘ‿ʘ)',
+]
+const index = ref(0) 
+
+setInterval(() => {
+  index.value = (index.value + 1) % aka.length
+}, 2000)
+
 </script>
 
 <template>
   <div class="flex flex-col justify-center gap-6 my-20">
     <h1 class="font-petrov">
-      <span class="letter-highlight">П</span>ривет, подписчики, я Евгений Дмитриевич
+      <span class="letter-highlight">С</span>алют, я Евгений
     </h1>
-    <div class="text-center text-2xl text-ziggurat-500">Это мой сайт-визитка</div>
+    <div class="text-center text-2xl text-ziggurat-500" >
+      <div v-for="(item, i) in aka" :key="item">
+        <span v-if="i == index" data-aos="fade-down" :data-aos-delay="100">
+        {{ item }}
+        </span>
+      </div>
+      </div>
   </div>
   <div class="flex flex-col gap-36">
 

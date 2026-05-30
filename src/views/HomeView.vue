@@ -10,7 +10,7 @@ useHead(getHead('Главная'))
     <div class="flex flex-col justify-center gap-10">
       <div class="flex flex-col gap-1">
         <h1 class="font-petrov text-ziggurat-950">
-          <span class="letter-highlight">П</span>ривет, подписчики, я Евгений Дмитриевич
+          <span class="letter-highlight">С</span>алют, я Евгений
         </h1>
         <div class="mt-4 text-center text-2xl text-ziggurat-600 gap-10 items-baseline">
           Это мой сайт-визитка

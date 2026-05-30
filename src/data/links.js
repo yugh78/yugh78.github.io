@@ -15,7 +15,7 @@ const LINKS = [
       icon: 'fab fa-telegram',
       color: 'text-blue-500'
     },
-    url: 'https://t.me/mathuc',
+    url: 'https://t.me/ebrprod',
     title: 'Мой Telegram'
   }
 ]

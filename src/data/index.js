@@ -1,5 +1,6 @@
 import me from '@/images/me.png'
 import me_and_who from '@/images/me_and_who.png'
+import stan from '@/images/stanreverse.gif'
 
 import image1 from '@/images/abstract/1.svg'
 import image2 from '@/images/abstract/2.svg'
@@ -45,8 +46,13 @@ const data = {
         },
         {
           title: '',
-          text: 'Занимаюсь каратэ Киокушинкай <em>8 лет</em>, имею черный пояс, 1 дан. Так что могу и... на шпагат сесть',
+          text: 'Профессионально занимаюсь каратэ Киокушинкай, имею черный пояс 1 дан.',
           img: me_and_who
+        },
+        {
+          title: '',
+          text: 'Силовые: <ul> <li>жим лежа 135кг,</li> <li>присед 150кг,</li> <li>становая тяга 160кг на гвоздях.</li> </ul>',
+          img: stan
         }
       ]
     },
@@ -54,19 +60,20 @@ const data = {
       title: 'Мои навыки',
       items: [
         {
-          title: 'Tailwind',
+          title: 'Tailwind CSS',
           description: 'Этот сайт я накидал с использованием <kbd>tailwind</kbd>',
           iconName: 'fa-brands fa-css3'
         },
         {
-          title: 'CSS/HTML',
-          iconName: 'fa-brands fa-html5'
+          title: 'HTML/CSS',
+          iconName: 'fa-brands fa-html5',
+          description: 'Адаптивная вёрстка, оформление страниц и построение структуры интерфейсов.'
         },
         {
           title: 'SQL',
           iconName: 'fa-solid fa-database',
           description:
-            'Знания базовых запросов <em>(таких как: <kbd>SELECT</kbd>, <kbd>JOIN</kbd>, <kbd>INSERT</kbd>)</em>'
+            'Базовые запросы и работа с данными.'
         },
         {
           title: 'Figma',
@@ -82,10 +89,44 @@ const data = {
               description: 'Разрабатывал телеграм ботов на заказ'
             },
             {
-              title: 'django',
+              title: 'Django',
               description: 'Только трогал'
             }
           ]
+        },
+        { 
+          title: 'Vue.js',
+          iconName: 'fa-brands fa-vuejs',
+          description: 'Основной инструмент для создания интерфейсов. На Vue разработан этот сайт-визитка.',
+        },
+        {
+          title: 'React',
+          iconName: 'fa-brands fa-react',
+          description: 'Есть опыт создания компонентов и интерфейсов на React.'
+        },
+        {
+          title: 'Nuxt',
+          iconName: icons.dummy,
+          description: 'Работал с проектами на Nuxt и компонентной структурой приложений.'
+        },
+        {
+          title: 'TypeScript',
+          iconName: icons.dummy,
+        },
+        {
+          title: 'Directus',
+          iconName: icons.dummy,
+          description: 'Использовал как backend/CMS для управления данными проекта.'
+        },
+        {
+          title: 'Docker',
+          iconName: 'fab fa-docker',
+          description: 'Запускал и настраивал окружение для веб-проектов в контейнерах.'
+        },
+        {
+          title: 'GitHub Actions',
+          iconName: 'fab fa-github',
+          description: 'Настраивал CI/CD пайплайны для автоматизации сборки и деплоя проектов.'
         }
       ]
     },
@@ -190,6 +231,8 @@ const data = {
         },
         {
           title: 'Сайт для ресторана',
+          description:
+            'Сайт для ресторана, который я делал совместно с <a href=https://github.com/katy248>товарищем</a>. Сайт был сделан на nuxt, с использованием directus в качестве бэкенда и docker для деплоя.',
           gif: sirRabbitGif,
           tags: [
             codeTags.htmlCss,
